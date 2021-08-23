@@ -14,7 +14,7 @@ public class Simple {
 	//This is the method header and marks the beggining of method.
 	public static void main(String[] args) {
 		
-		
+		//This line display the message on the screen in the quotes
 		System.out.println("Programming is great fun");
 		
 		
