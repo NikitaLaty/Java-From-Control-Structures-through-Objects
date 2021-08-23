@@ -1,0 +1,27 @@
+//*****************
+//Code listing 2-1
+//*****************
+
+
+
+
+//This is the class header and marks the begging of a class definition.
+//Public is a class specifier
+//class is a key word marking the begging of a class
+//Simple is the class name. Made by programmer. Must match jave file name Simple.java
+public class Simple {
+	
+	//This is the method header and marks the beggining of method.
+	public static void main(String[] args) {
+		
+		
+		System.out.println("Programming is great fun");
+		
+		
+	}
+	
+	
+	
+	
+
+}
