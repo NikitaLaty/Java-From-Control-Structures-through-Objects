@@ -20,7 +20,14 @@ public class Simple {
 		
 	}
 	
-	
+	//Java is a case sensitive language 
+	//All java programs must bwe stored in a file with a name that ends with .java
+	//Comments are ingnored by the compiler
+	//A .java file may contain many classes, but may have only one public class
+	// Every java application must have a method name main
+	// Every brace needs to be closed 
+	// Statements are terminated with semicolons, except comments, class headers, method headers or braces.
+	// 
 	
 	
 
