@@ -10,10 +10,11 @@ public class IntegerVariables {
 		long days;//      range :-9,223372,036,854,775,808 to 9,223,372,036,854,775,807
 		
     //assignment statement
+    //All treated as integers. Post Fix with L to force long.
 		miles = 105;
 		minuets = 120;
 		checking = -20;
-		days = 189000;
+		days = 189000L; //using postfix L to force true long
 		
 		
 		
