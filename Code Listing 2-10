@@ -38,6 +38,16 @@ public class IntegerVariables {
 		System.out.println("The total is " + total);
 		
 		
+		//Scientific Notation
+		
+		double distance , mass;
+		
+		distance = 1.495979E11;
+		mass = 1.989e30;
+		System.out.println("The sun is " + distance + " meters away.");
+		System.out.println("The sun's mass is " + mass + " kilograms.");
+		
+		
 	}
 
 }
