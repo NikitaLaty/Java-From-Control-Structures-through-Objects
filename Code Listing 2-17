@@ -1,0 +1,34 @@
+
+public class Arithmatic {
+	
+	public static void main(String[] args) {
+		
+		//example of a uranry operator
+		int num = 5;
+		num = -num;
+		System.out.println(num);
+		
+		//Example of basic binary arthimatic operands
+		
+		double regularWages;
+		double basePay = 25;
+		double regularHours = 40;
+		double overTimeWages ;
+		double overTimePay = 37.5;
+		double overTimeHours = 10;
+		double totalWages;
+		
+		regularWages = basePay * regularHours;
+		overTimeWages = overTimePay * overTimeHours;
+		totalWages = regularWages + overTimeWages;
+		System.out.println("Wages for this week are $" + totalWages);
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
