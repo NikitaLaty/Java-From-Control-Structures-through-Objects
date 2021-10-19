@@ -59,11 +59,12 @@ public class IntegerVariables {
 		System.out.println(bool);
 		
 		//Char Data Type
+		//65 is A and 66 is B ... 
 		
 		char letter = 'A';
-		System.out.println(letter);
-		letter = 'B';
-		System.out.println(letter);
+		System.out.println(letter); //prints A
+		letter = 65;
+		System.out.println(letter); // prints A as well
 		
 		
 	}
