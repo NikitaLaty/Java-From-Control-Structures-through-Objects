@@ -47,6 +47,15 @@ public class IntegerVariables {
 		System.out.println("The sun is " + distance + " meters away.");
 		System.out.println("The sun's mass is " + mass + " kilograms.");
 		
+		//Boolean primative variable
+		
+		boolean bool;
+		
+		bool = true;
+		System.out.println(bool);
+		bool = false;
+		System.out.println(bool);
+		
 		
 	}
 
