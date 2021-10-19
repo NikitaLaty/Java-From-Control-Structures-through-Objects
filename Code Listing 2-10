@@ -23,8 +23,11 @@ public class IntegerVariables {
 		System.out.println("Our Account balance is $"+ checking);
 		System.out.println("About "+ days + " days ago Columbus stood on this spot.");
 		
-		//Floating point
-		double  price, tax, total; // range :1.7 x 10^-38 to 1.7 x 10^38
+		// Floating point
+		// Range :1.7 x 10^-38 to 1.7 x 10^38
+		// Java assumes double, use postfix F to force float literal
+		
+		double  price, tax, total; 
 		
 		price= 29.75;
 		tax=1.76;
