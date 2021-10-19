@@ -23,6 +23,17 @@ public class IntegerVariables {
 		System.out.println("Our Account balance is $"+ checking);
 		System.out.println("About "+ days + " days ago Columbus stood on this spot.");
 		
+		//Floating point
+		double  price, tax, total; // range :1.7 x 10^-38 to 1.7 x 10^38
+		
+		price= 29.75;
+		tax=1.76;
+		total=31.51;
+		
+		System.out.println("The price of the item " + "is " + price);
+		System.out.println("The tax is " + tax);
+		System.out.println("The total is " + total);
+		
 		
 	}
 
