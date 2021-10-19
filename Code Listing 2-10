@@ -58,6 +58,13 @@ public class IntegerVariables {
 		bool = false;
 		System.out.println(bool);
 		
+		//Char Data Type
+		
+		char letter = 'A';
+		System.out.println(letter);
+		letter = 'B';
+		System.out.println(letter);
+		
 		
 	}
 
