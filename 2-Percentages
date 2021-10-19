@@ -24,6 +24,23 @@ public class Contributions {
 		contributions = monthlyPay * 0.1;
 		System.out.println("10 percent is $" + contributions);
 		
+		//Discount 2-19 example
+		
+		double regularPrice = 59.00;
+		double discount;
+		double salePrice;
+		
+		//Calculate the amount of a 20% discount
+		discount = regularPrice * 0.2;
+		
+		//Calculate the sale price
+		salePrice = regularPrice - discount;
+		
+		System.out.println("Regular price: $" + regularPrice);
+		System.out.println("Sale of 20%");
+		System.out.println("Discount price $" + discount);
+		System.out.println("Sale price: $" + salePrice);
+		
 		
 	
 	}
