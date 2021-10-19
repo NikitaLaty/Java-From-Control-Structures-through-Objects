@@ -48,6 +48,8 @@ public class IntegerVariables {
 		System.out.println("The sun's mass is " + mass + " kilograms.");
 		
 		//Boolean primative variable
+		//boolean variables may hold only the value true or false
+		//The contents of boolean variables may not be copied to a variable of any type other than boolean.
 		
 		boolean bool;
 		
