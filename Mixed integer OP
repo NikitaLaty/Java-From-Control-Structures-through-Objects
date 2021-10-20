@@ -1,0 +1,20 @@
+public class Check {
+public static void main(String[] args) {
+	
+	//Variable get converted to integers data type during arithmatic operations
+	//short will beconverted to a integer.
+	//This example demonstrates that a short + short, the result must be stored in a int variable or an error will be thrown
+	
+	
+	short x = 4;
+	short  y = 2;
+	int z;
+	
+	z = y + x ;
+	
+	System.out.println("The result for z is " + z + " :z is a integer.");
+	
+	
+	
+}
+}
