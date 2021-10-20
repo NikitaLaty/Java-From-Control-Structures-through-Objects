@@ -14,6 +14,18 @@ public static void main(String[] args) {
 	
 	System.out.println("The result for z is " + z + " :z is a integer.");
 	
+	//Another option or a work around is to use a cast in the arithmatic
+	
+	 x = 4;
+	 y = 2;
+	short s;
+	
+	//using short cast
+	s = (short)(x + y);
+	
+	System.out.println("This works now because of the cast s=" + s);
+	
+	
 	
 	
 }
