@@ -1,0 +1,24 @@
+public class StringDemo {
+
+	public static void main(String[] args) {
+		
+		//Creating 2 String objects from the String class, greeting and name.
+		//Note that String is a class and not a primative variable like int or a double
+		String greeting = "Good morning, ";
+		String name = "Yan Starr";
+		
+		System.out.println(greeting + name);
+		
+		//Displays : Good morning, Yan Starr
+
+		
+		
+		
+
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
