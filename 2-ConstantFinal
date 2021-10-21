@@ -5,6 +5,7 @@ public class ConstantFinal {
 		
 		//Setting constant variable, that can not be changed after
 		//Note the use of the word final
+		//Constants improve readability and system wide changes
 		final double INTEREST_RATE = 0.069;
 		
 		double account_balance = 2000;
