@@ -1,0 +1,23 @@
+public class ConstantFinal {
+
+	public static void main(String[] args) {
+		
+		
+		//Setting constant variable, that can not be changed after
+		//Note the use of the word final
+		final double INTEREST_RATE = 0.069;
+		
+		double account_balance = 2000;
+		
+		
+		double account_balance_new = (account_balance * INTEREST_RATE) + account_balance;		
+		
+		System.out.println("You account has $" + account_balance );
+		System.out.println("The interest rate is 6.9%");
+		System.out.println("You return is $" + account_balance_new);
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
