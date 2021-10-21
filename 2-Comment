@@ -1,0 +1,42 @@
+/**
+ * 
+ * 
+ * This class creates a program that calculates company payroll
+ * 
+ * This example is to show javadoc documantation notice the comments syntax
+ * 
+ * 
+ * @author nikita
+ *
+ */
+
+
+public class Comment {
+	
+	
+	/**
+	 * The main method is the program's starting point.
+	 * @param args
+	 */
+
+	public static void main(String[] args) {
+		
+		
+		double payRate= 30.0;
+		double hours = 80.0;
+		
+		double total = payRate * hours;
+		
+		System.out.println("Your pay check is $" + total);
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
