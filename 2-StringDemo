@@ -10,6 +10,15 @@ public class StringDemo {
 		System.out.println(greeting + name);
 		
 		//Displays : Good morning, Yan Starr
+		
+		//String class like most classes come with methods that can be performed with the objects
+		// refrenceVariable.length()
+		// object name has 9 charachters including the space
+		
+		System.out.println("Characters in the name object = " + name.length());
+		
+		//Display : Characters in the name object = 9
+
 
 		
 		
