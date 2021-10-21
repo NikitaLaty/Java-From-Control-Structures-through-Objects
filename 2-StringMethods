@@ -1,0 +1,47 @@
+
+public class StringMethods {
+
+	public static void main(String[] args) {
+		
+		//Show casing a few mothods that come with the string class
+		String message = "Jave is GREAT FUN!";
+		String upper = message.toUpperCase();
+		String lower = message.toLowerCase();
+		char letter = message.charAt(2);
+		int stringSize = message.length();
+		
+		
+		//displaying the results
+		System.out.println(message);
+		System.out.println(upper);
+		System.out.println(lower);
+		System.out.println(letter);
+		System.out.println(stringSize);
+		
+    //Long comment example
+
+
+		/*Result 
+		 * 
+		Jave is GREAT FUN! - original
+		JAVE IS GREAT FUN! - All CAPS
+		jave is great fun! - All lower case
+		v - Character t place 2
+		18 - length of the string
+	*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+		// TODO Auto-generated method stub
+
+	}
+
+}
