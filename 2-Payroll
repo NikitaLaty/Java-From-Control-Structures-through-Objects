@@ -1,0 +1,65 @@
+import java.util.Scanner; //Need for the Scanner Class
+
+/**
+ * Program demonstrates the Scanner Class
+ * @author nikit
+ *
+ */
+
+
+
+public class Payroll {
+
+	public static void main(String[] args) {
+		
+		
+		String name;
+		int hours;
+		double payRate;
+		double grossPay;
+	
+		//Create a Scanner Object to read input
+		//@SuppressWarnings("resource")
+		Scanner keyboard = new Scanner(System.in);
+
+		//Get the user name
+		System.out.print("What is your name? ");
+		name = keyboard.nextLine();
+		
+		//Get the number of hours worked this week
+		System.out.print("How many hours did you work this week? ");
+		hours = keyboard.nextInt();
+		
+		//Get the users hourly pay
+		System.out.print("What is your hourly pay rate? ");
+		payRate = keyboard.nextDouble();
+		
+		//Calculate the gross pay
+		grossPay = payRate * hours;
+		
+		//Display the results information.
+		System.out.println("Hello, " + name);
+		System.out.println("Your gross pay is $" + grossPay);
+		
+		
+		
+		keyboard.close();
+    
+    
+    /*
+    What is your name? Nikita
+    How many hours did you work this week? 80
+    What is your hourly pay rate? 20
+    Hello, Nikita
+    Your gross pay is $1600.0
+    
+    */
+    
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
