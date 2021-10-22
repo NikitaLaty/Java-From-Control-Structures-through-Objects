@@ -44,7 +44,10 @@ public class Payroll {
 		//Example for reading a single charachter.
 		
 		
-		//Use this to fix the scanner issue following a number entry
+		//Use this to fix the scanner issue with with nextLine.
+		//Next Line does not skip newline charachter which is left behind by nextInt or other primative value collected by a scanner call in a previous statment
+		//Next Double and others alike do skip the newline character so this problem arise when you have nextline following a nextdouble
+		//quick fix use the following statement to consume the newline charachter left int the keyboard buffer
 		keyboard.nextLine();
 		
 		String input;
