@@ -1,0 +1,53 @@
+import javax.swing.JOptionPane;
+
+/**
+ * This program demonstrates using dialogs
+ * with JOptionPane
+ * @author nikit
+ *
+ */
+
+public class NamesDailog {
+
+	public static void main(String[] args) {
+		
+		
+		String firstName, lastName;
+		
+		//Get the users first name
+		
+		firstName = JOptionPane.showInputDialog("What is your first name?");
+		
+		//Get the users last name
+		lastName = JOptionPane.showInputDialog("What is your last name?");
+		
+		//Display a greeting
+		JOptionPane.showMessageDialog(null, "Hello " + firstName + " " + lastName);
+		
+
+		//This statement is needed if your using JOptionPane
+		System.exit(0);
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
