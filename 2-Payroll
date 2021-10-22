@@ -41,20 +41,40 @@ public class Payroll {
 		System.out.println("Hello, " + name);
 		System.out.println("Your gross pay is $" + grossPay);
 		
+		//Example for reading a single charachter.
+		
+		
+		//Use this to fix the scanner issue following a number entry
+		keyboard.nextLine();
+		
+		String input;
+		
+		char answer;
+		
+		System.out.println("Are you having fun Yan? (Y=yes , N=no) ");
+		input = keyboard.nextLine();
+		answer = input.charAt(0);
+		
+		System.out.println("Answer = "+answer);
+		
+		
+		
+		
 		
 		
 		keyboard.close();
-    
-    
-    /*
-    What is your name? Nikita
-    How many hours did you work this week? 80
-    What is your hourly pay rate? 20
-    Hello, Nikita
-    Your gross pay is $1600.0
-    
-    */
-    
+		//Output Results
+		/*
+		What is your name? Nikita
+		How many hours did you work this week? 40
+		What is your hourly pay rate? 20
+		Hello, Nikita
+		Your gross pay is $800.0
+		Are you having fun Yan? (Y=yes , N=no) 
+		Y
+		Answer = Y
+		
+		*/
 		
 		
 		
