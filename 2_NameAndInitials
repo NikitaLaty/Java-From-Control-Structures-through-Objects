@@ -1,0 +1,42 @@
+
+public class NameAndInitials {
+	
+	
+	
+	public static void main(String[] args) {
+		
+		String firstName = "Nikita";
+		String middleName = "Peter";
+		String lastName = "Latychev";
+		
+		
+		char first = firstName.charAt(0);
+		char middle = middleName.charAt(0);
+		char last = lastName.charAt(0);
+		
+		
+		System.out.println(firstName);
+		System.out.println(middleName);
+		System.out.println(lastName);
+		
+		System.out.println(first);
+		System.out.println(middle);
+		System.out.println(last);
+		
+		
+		
+		
+		/*
+    Nikita
+    Peter
+    Latychev
+    N
+    P
+    L
+
+		*/
+		
+		
+	}
+
+}
