@@ -1,0 +1,26 @@
+public class PersonalInformation {
+
+	public static void main(String[] args) {
+		
+		String name = "Nikita Latychev";
+		String address = "1111 street rd, Philadelphia Pa, 19112";
+		String phone = "267-555-6666";
+		String major = "Computer Science";
+		
+		System.out.println("Name: " + name + " \n" + "Adress: " + address + " \nPhone: " + phone + "\nMajor " + major);
+		
+		/*
+    
+    Name: Nikita Latychev 
+    Adress: 1111 street rd, Philadelphia Pa, 19112 
+    Phone: 267-555-6666
+    Major Computer Science
+    
+    */
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
