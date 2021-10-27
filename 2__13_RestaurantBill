@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class RestaurantBill {
+
+	public static void main(String[] args) {
+		
+		
+		System.out.println("What is the total cost of the meal?");
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		
+		double mealCost = keyboard.nextDouble();
+		
+		double mealTax = mealCost * 0.0675;
+		
+		double mealTip = (mealCost + mealTax) * 0.2;
+		
+		double totalCost = mealCost + mealTax + mealTip;
+		
+		System.out.println("**RECEIPT**");
+		
+		System.out.println("Meal $" + mealCost);
+		
+		System.out.println("Meal Tax $" + mealTax);
+		
+		System.out.println("Meal Tip $" + mealTip);
+		
+		System.out.println("Total $" + totalCost);
+		
+		
+/*TEST RUN
+
+What is the total cost of the meal?
+100
+**RECEIPT**
+Meal $100.0
+Meal Tax $6.75
+Meal Tip $21.35
+Total $128.1
+
+
+
+	}
+
+}
