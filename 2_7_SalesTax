@@ -1,0 +1,82 @@
+
+/**
+ * Sales Tax program
+ */
+
+
+
+import java.util.Scanner;
+
+public class SalesTax {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		
+		System.out.println("What is the total amount?");
+		
+		double amount = 0;
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		amount = keyboard.nextDouble();
+		
+		double stateTax = 0.04 * amount;
+		double countyTax = 0.02 * amount;
+		
+		double totalAmount = stateTax + countyTax + amount;
+		
+		System.out.println("The state tax: " + stateTax+"$");
+		System.out.println("The county tax: " + countyTax+"$");
+		System.out.println("The total amount: " + totalAmount + "$");
+		
+		
+		
+		
+
+		
+		
+		
+		/*
+    
+    
+    
+    Display:
+    What is the total amount?
+    100
+    The state tax: 4.0$
+    The county tax: 2.0$
+    The total amount: 106.0$
+
+    
+
+    
+    */
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		keyboard.close();
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
