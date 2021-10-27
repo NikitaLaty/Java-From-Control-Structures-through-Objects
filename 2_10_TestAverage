@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class TestAverage {
+	
+	
+	public static void main(String[] args) {
+		
+		double firstTest, secondTest, thirdTest;
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("Enter the first test score:");
+		firstTest = keyboard.nextDouble();
+		
+		System.out.println("Enter the second test score:");
+		secondTest = keyboard.nextDouble();
+		
+		System.out.println("Enter the third test score:");
+		thirdTest= keyboard.nextDouble();
+		
+		
+		
+		double average = (firstTest + secondTest + thirdTest) / 3;
+		
+		System.out.println("The average test score " + average);
+		
+		keyboard.close();
+		
+		
+		/*
+    TEST RUN
+    
+Enter the first test score:
+100
+Enter the second test score:
+90
+Enter the third test score:
+80
+The average test score 90.0
+
+		*/
+		
+		
+		
+		
+		
+		
+	}
+
+}
