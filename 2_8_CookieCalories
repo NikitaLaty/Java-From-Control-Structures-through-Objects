@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class CookieCalories {
+
+	public static void main(String[] args) {
+		
+		
+		System.out.println("How many cookie did you eat? ");
+		Scanner keyboard = new Scanner(System.in);
+		
+		double cookiesAte = keyboard.nextDouble();
+		
+		double eachCookieCalorie =  (10 * 300) / 40;
+		
+		double yourTotalCalories = cookiesAte * eachCookieCalorie;
+		
+		System.out.println("You consumed " + yourTotalCalories + " calories.");
+
+		
+		
+		
+		
+		/*
+     *DISPLAY*
+    
+    How many cookie did you eat? 
+    4
+    You consumed 300.0 calories.
+    
+    
+    
+    
+    
+    
+    
+    */
+
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
