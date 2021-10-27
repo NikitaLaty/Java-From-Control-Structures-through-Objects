@@ -1,0 +1,53 @@
+/**
+ * 2-6
+ * Land Calculation
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * @author nikita
+ *
+ */
+public class LandCalculation {
+
+	public static void main(String[] args) {
+		
+		
+		double acre = 43560;
+		
+		double land = 389767;
+		
+		double numberOfAcre = land / acre ;
+		
+		System.out.println("The total amount of acres in a tract of land of " + land +" is " + numberOfAcre);
+		
+		
+		
+		
+		/*
+    
+    The total amount of acres in a tract of land of 389767.0 is 8.947819100091827
+
+    
+    
+    
+    
+    */
+		
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
