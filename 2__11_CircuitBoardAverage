@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class CircuitBoardProfit {
+
+	public static void main(String[] args) {
+		
+		
+		
+		Scanner keyboard = new Scanner(System.in);
+		System.out.println("What is the price of the circuit board: ");
+		double priceOfCircuitBoard = keyboard.nextDouble();
+		
+		double profit = priceOfCircuitBoard * 0.4;
+		
+		System.out.println("The company profit is $" + profit);
+		
+		
+		
+		
+		
+		
+		/*TEST RUN
+    
+    
+What is the price of the circuit board: 
+100
+The company profit is $40.0
+
+		
+		
+		*/
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
