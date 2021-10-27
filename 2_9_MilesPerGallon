@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+/**
+ * MPG =  Miles driven / Gallons of gas used
+ * 
+ * Write a program that asks the user for the number of miles driven and gallons used.
+ * 
+ * @author nikita
+ *
+ */
+public class MilesPerGallon {
+
+	public static void main(String[] args) {
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		double milesDriven = 0;
+		double gallonsUsed = 0;
+		
+		System.out.println("How miles driven? ");
+		milesDriven = keyboard.nextDouble();
+		
+		System.out.println("How many gallons did you use? ");
+		gallonsUsed = keyboard.nextDouble();
+		
+		double milesPerGallon = milesDriven / gallonsUsed;
+		
+		System.out.println("You car get about " + milesPerGallon + " miles per gallon.");
+		
+		
+		
+		
+		
+		
+		/*
+    TEST RUN EXAMPLE
+    
+How miles driven? 
+33
+How many gallons did you use? 
+2
+You car get about 16.5 miles per gallon.
+		
+		
+		*/
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
