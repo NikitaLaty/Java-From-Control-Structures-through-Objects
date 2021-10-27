@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class StringManipulator {
+
+	public static void main(String[] args) {
+		
+		
+		
+		System.out.println("Enter the name of your favorite city:");
+		Scanner keyboard = new Scanner(System.in);
+
+		String favoriteCity = keyboard.nextLine();
+		
+		
+		System.out.println("The number of letter in " + favoriteCity + " is " + favoriteCity.length());
+		System.out.println("In Upper Case " + favoriteCity.toUpperCase());
+		System.out.println("In Lower Case " + favoriteCity.toLowerCase());
+		System.out.println("The first character in the name is " + favoriteCity.charAt(0));
+		
+		
+		/*TEST RUN
+		
+Enter the name of your favorite city:
+Philadelphia
+The number of letter in Philadelphia is 12
+In Upper Case PHILADELPHIA
+In Lower Case philadelphia
+The first character in the name is P
+		
+		
+		
+
+	}
+
+}
