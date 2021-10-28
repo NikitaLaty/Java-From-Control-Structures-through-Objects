@@ -1,0 +1,36 @@
+
+public class StockCommission {
+
+	public static void main(String[] args) {
+		
+		
+		double shares = 600;
+		double sharePrice = 21.77;
+		
+		double total = shares * sharePrice;
+		
+		double commission = total * 0.02;
+		
+		double grandTotal = commission + total;
+		
+		
+		System.out.println("Total amount for the transaction $" + total);
+		
+		System.out.println("The commission fee is $" + commission);
+		
+		System.out.println("The grand total for the transaction $" + grandTotal);
+
+/*Test Run
+
+Total amount for the transaction $13062.0
+The commission fee is $261.24
+The grand total for the transaction $13323.24
+
+*/		
+
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
