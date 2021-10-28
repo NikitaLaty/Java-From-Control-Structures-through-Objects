@@ -1,0 +1,32 @@
+
+public class EnergyDrinkConsumption {
+
+	public static void main(String[] args) {
+		
+		double totalCustomer = 12467;
+		
+		double dailyusers = totalCustomer * 0.14;
+		
+		System.out.println("Total number of customers " + totalCustomer);
+		
+		System.out.println("The number of customer that purchase one or more drinks per week " + dailyusers);
+		
+		double citrusLovers = dailyusers * 0.64;
+		
+		System.out.println("The number of customers that prefer citrus flavor " + citrusLovers);
+		
+		
+/*Test Run
+    
+Total number of customers 12467.0
+The number of customer that purchase one or more drinks per week 1745.38
+The number of customers that prefer citrus flavor 1117.0432
+		
+*/		
+		
+		
+
+
+	}
+
+}
