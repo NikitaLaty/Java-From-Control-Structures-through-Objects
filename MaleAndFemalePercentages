@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+
+
+public class MaleAndFemale {
+
+	public static void main(String[] args) {
+		
+		
+		System.out.println("What is the number of females in the class? ");
+		double femalesNumber = 0;
+		Scanner keyboard = new Scanner(System.in);
+		femalesNumber = keyboard.nextInt();
+		
+		System.out.println("What is the number of males in the class? ");
+		double malesNumber = 0;
+		malesNumber = keyboard.nextInt();
+		
+		double total = femalesNumber + malesNumber;
+		
+		double percentageFemales = femalesNumber / total;
+		double percentageMales = malesNumber / total;
+		
+		System.out.println("Female percentage " + percentageFemales *100 + "%");
+		System.out.println("Male percentage " + percentageMales *100 +"%" );
+
+		
+    /*Test Run
+    
+What is the number of females in the class? 
+12
+What is the number of males in the class? 
+8
+Female percentage 60.0%
+Male percentage 40.0%
+
+
+    */
+		
+		
+
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
