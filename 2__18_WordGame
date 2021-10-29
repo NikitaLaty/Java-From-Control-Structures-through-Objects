@@ -1,0 +1,77 @@
+import java.util.Scanner;
+
+public class WordGame {
+
+	public static void main(String[] args) {
+		
+		
+		
+		String name;
+		int age; 
+		String city;
+		String collage;
+		String proffesion;
+		String animal;
+		String petsName;
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("What is your name? ");
+		name = keyboard.nextLine();
+		System.out.println("What is your city?");
+		city = keyboard.nextLine();
+		System.out.println("What is your collage?");
+		collage = keyboard.nextLine();
+		System.out.println("What is your proffesion?");
+		proffesion = keyboard.nextLine();
+		System.out.println("What is your animal?");
+	    animal = keyboard.nextLine();
+		System.out.println("What is pets mame?");
+		petsName = keyboard.nextLine();
+		System.out.println("What is your age?");
+		age = keyboard.nextInt();
+		
+		
+		
+		System.out.println("There once was a person named " + name + " who lived in "+ city + ". At the age of " + age + ",");
+		System.out.println(name + " went to collage at "+ collage + ". " + name + " graduated and went to work as a " + proffesion);
+		System.out.println("Then, " + name +" adopted a " + animal+ " named " + petsName + ". They both lived happily ever after!");
+		
+		
+		
+		
+		/*TEST RUN
+    
+What is your name? 
+Nik
+What is your city?
+Philadelphia
+What is your collage?
+Temple U
+What is your proffesion?
+Computer Scientist
+What is your animal?
+dog
+What is pets mame?
+Ray
+What is your age?
+33
+
+
+
+There once was a person named Nik who lived in Philadelphia. At the age of 33,
+Nik went to collage at Temple U. Nik graduated and went to work as a Computer Scientist
+Then, Nik adopted a dog named Ray. They both lived happily ever after!
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
