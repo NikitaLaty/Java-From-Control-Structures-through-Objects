@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class IngredientsAdjuster {
+
+	public static void main(String[] args) {
+		
+		
+		double sugar = 1.5 / 48;
+		double butter = 1.0 / 48;
+		double flour = 2.75 / 48;
+		
+		System.out.println("How many cookies would you like to make?");
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		double numberOfCookies = keyboard.nextDouble();
+		
+		
+
+		
+		System.out.println("Sugar = " + sugar * numberOfCookies + " number of cups");
+		System.out.println("Butter = " + butter * numberOfCookies + " number of cups");
+		System.out.println("Flour = " + flour * numberOfCookies + " number of cups48");
+		
+		
+    
+    /*TEST RUN
+    
+How many cookies would you like to make?
+24
+Sugar = 0.75 number of cups
+Butter = 0.5 number of cups
+Flour = 1.375 number of cups48
+
+    
+    
+    
+    */
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
