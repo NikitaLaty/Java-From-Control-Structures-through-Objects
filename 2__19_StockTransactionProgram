@@ -1,0 +1,54 @@
+
+public class StockTransactionProgram {
+
+	public static void main(String[] args) {
+		
+		
+		double numberOdShares = 1000;
+		double stockPrice = 32.87;
+		double price = numberOdShares * stockPrice;
+		double commission = 0.02 * price;
+		
+		
+		
+		System.out.println("Joe payed $" + price);
+		System.out.println("Joe payed $" + commission + " in commission.");
+		
+		double newStockPrice = 33.92;
+		double newPrice = newStockPrice * numberOdShares;
+		double afterCommission = newPrice * 0.02;
+		
+		System.out.println("Joe sold his shares for " + newPrice);
+		System.out.println("Joe payed $" + afterCommission + " in commission again.");
+		
+		double profit = (newPrice - afterCommission) - (price + commission);
+		
+		System.out.println("Joe's profit is " + profit);
+
+		
+		
+		
+		/*TEST RUN
+    
+Joe payed $32870.0
+Joe payed $657.4 in commission.
+Joe sold his shares for 33920.0
+Joe payed $678.4 in commission again.
+Joe's profit is -285.8000000000029
+
+		
+		
+		
+	*/	
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
