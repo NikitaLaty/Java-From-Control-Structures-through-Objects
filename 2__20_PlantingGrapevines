@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class PlantingGrapevines {
+
+	public static void main(String[] args) {
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("What is the length of the row?");
+		double lengthofRow  = keyboard.nextDouble();
+		System.out.println("What is the space used by the end posts?");
+		double endPostSpace = keyboard.nextDouble();
+		System.out.println("What is the space between the vines?");
+		double spaceBetween = keyboard.nextDouble();
+		
+		
+		double numGrapevinesThatWillFit = ( lengthofRow - ( 2 * endPostSpace)) / spaceBetween ;
+		
+		
+		
+		
+		System.out.println("The number of grapevines that can fit in a row is " + numGrapevinesThatWillFit);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
