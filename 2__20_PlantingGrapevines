@@ -22,11 +22,18 @@ public class PlantingGrapevines {
 		
 		
 		
+		/*
+What is the length of the row?
+15
+What is the space used by the end posts?
+2
+What is the space between the vines?
+2
+The number of grapevines that can fit in a row is 5.5
 		
 		
 		
-		
-		
+*/		
 		
 		// TODO Auto-generated method stub
 
