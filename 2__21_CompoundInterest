@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+public class CompoundInterest {
+
+	public static void main(String[] args) {
+		
+		double amount_A;
+		double principal_P;
+		double interest_R;
+		double numberOfTimesCompunded_N;
+		double years_T;
+		
+		System.out.println("What is the principal amount?");
+		Scanner keyboard = new Scanner(System.in);
+
+		principal_P = keyboard.nextDouble();
+		
+		System.out.println("What is the annual interest rate");
+		
+		interest_R = keyboard.nextDouble() / 100;
+		
+		System.out.println("How many times a year does the interest rate gets compounded?");
+		
+		numberOfTimesCompunded_N = keyboard.nextDouble();
+		
+		System.out.println("How many years will be left to earn interest?");
+		
+		years_T = keyboard.nextDouble();
+		
+		amount_A = principal_P * Math.pow(( 1 + (interest_R / numberOfTimesCompunded_N)), numberOfTimesCompunded_N * years_T);
+		
+		
+		System.out.println("The final amount is " + amount_A);
+		
+		
+		
+		
+		
+		keyboard.close();
+    
+    
+    
+    /*
+
+
+What is the principal amount?
+1000
+What is the annual interest rate
+4
+How many times a year does the interest rate gets compounded?
+12
+How many years will be left to earn interest?
+5
+The final amount is 1220.9965939421215
+    
+    
+    
+    
+    */
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
