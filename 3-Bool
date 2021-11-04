@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Bool {
+
+	public static void main(String[] args) {
+		
+		
+		
+		boolean flag = false;
+		
+		Scanner keyboard = new Scanner(System.in);
+		System.out.println("Enter score:");
+		double score = keyboard.nextDouble();
+		
+		if (score >= 90) {
+			flag = true;
+			
+		}
+		
+		
+		
+		if (flag) {
+			
+			System.out.println("You have an A in the class!");
+			
+		}
+		
+		/*TEST RUN
+Enter score:
+90
+You have an A in the class!
+*/
+
+	}
+
+}
