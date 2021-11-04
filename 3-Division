@@ -1,0 +1,71 @@
+import java.util.Scanner;
+
+/**
+ * This program demonstrates if-else
+ * @author nikit
+ *
+ */
+public class Division {
+
+	public static void main(String[] args) {
+		
+		
+		
+		double number1,
+				number2,
+				 quotient;
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("Enter a number: ");
+		number1 = keyboard.nextDouble();
+		
+		System.out.println("Enter a second number:");
+		
+		number2 = keyboard.nextDouble();
+		
+		if (number2 == 0) {
+			
+			System.out.println("Division by zero is not possible");
+			System.out.println("Please run the program  again and ");
+			System.out.println("enter a number other than zero.");
+			
+		}
+		else {
+			
+			quotient = number1 / number2;
+			System.out.print("The quotion of " + number1);
+			System.out.print(" divided by " + number2);
+			System.out.println(" is " + quotient);
+			
+			
+			
+		}
+		
+/*TEST RUN
+    
+    
+Enter a number: 
+10
+Enter a second number:
+5
+The quotion of 10.0 divided by 5.0 is 2.0
+==============================================
+
+Enter a number: 
+10
+Enter a second number:
+0
+Division by zero is not possible
+Please run the program  again and 
+enter a number other than zero.
+
+    
+    
+    */
+		
+		
+
+	}
+
+}
