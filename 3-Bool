@@ -25,10 +25,17 @@ public class Bool {
 			
 		}
 		
+	        char ch  = 'A';
+		if (ch == 'A') {
+	        System.out.println("The letter is A");
+			
+		}
+		
 		/*TEST RUN
 Enter score:
 90
 You have an A in the class!
+The letter is A
 */
 
 	}
