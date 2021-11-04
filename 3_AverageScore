@@ -1,0 +1,71 @@
+import java.util.Scanner;
+
+public class AverageScore {
+
+	public static void main(String[] args) {
+		
+		double score1, 
+				score2,
+				 score3,
+				  average;
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("This program averages 3 test scores.");
+		
+		//Get the first score
+		System.out.println("Enter score #1: ");
+		
+		score1 = keyboard.nextDouble();
+		
+		
+		
+		//Get the second score
+		System.out.println("Enter score #2: ");
+		
+		
+		score2 = keyboard.nextDouble();
+		
+		
+		
+		
+		//Get the third score
+		System.out.println("Enter score #3: ");
+
+		
+		score3 = keyboard.nextDouble();
+		
+		
+		//Calculate and display the average score
+		average = (score1 + score2 + score3 ) / 3.0;
+		System.out.println("The average score is " + average);
+		
+		//use if statement to display a line if score is greater or equal to 95
+		if (average >= 95) {
+			
+			System.out.println("That's a great score!");
+			
+		}
+		
+		
+		
+		
+	/*TEST RUN
+This program averages 3 test scores.
+Enter score #1: 
+100
+Enter score #2: 
+95
+Enter score #3: 
+90
+The average score is 95.0
+That's a great score!
+*/
+
+	}
+
+}
+
+
+
+
