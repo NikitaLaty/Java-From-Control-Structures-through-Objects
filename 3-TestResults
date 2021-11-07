@@ -1,0 +1,43 @@
+import javax.swing.JOptionPane;
+
+
+public class TestResults {
+
+	public static void main(String[] args) {
+		
+		
+		
+	int testScore;
+	String input;
+	
+	
+	input = JOptionPane.showInputDialog("Enter the numeric test score and i will tell the grade: ");
+	
+	testScore = Integer.parseInt(input);
+	
+	if (testScore < 60) {
+	 
+		JOptionPane.showMessageDialog(null,"Your grade is an F.");
+	}else if (testScore < 70) {
+		
+		JOptionPane.showMessageDialog(null,"Your grade is an D.");
+	}else if (testScore < 80) {
+		
+		JOptionPane.showMessageDialog(null,"Your grade is an C.");
+	}else if (testScore < 90) {
+		
+		JOptionPane.showMessageDialog(null,"Your grade is an B.");
+	}else 
+		JOptionPane.showMessageDialog(null,"Your grade is an A.");
+		
+		System.exit(0);
+		
+		
+
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
