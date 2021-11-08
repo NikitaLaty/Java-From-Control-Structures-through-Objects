@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class ConditionalOperator {
+
+	public static void main(String[] args) {
+		
+		
+		String username;
+		String password;
+		
+	    Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("Enter username: ");
+		username = keyboard.nextLine();
+		
+		
+		System.out.println("Enter Password");
+		password = keyboard.nextLine();
+		
+		System.out.println((username.equals("Nik") && password.equals("Sprite")) ? "Access Granted" : "Access Denied");
+		
+		
+
+		keyboard.close();
+
+	}
+
+}
+
+/*
+Enter username: 
+Nik
+Enter Password
+Sprite
+Access Granted
+
+
+
+*/
