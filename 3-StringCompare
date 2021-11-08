@@ -1,0 +1,49 @@
+
+public class StringCompare {
+
+	public static void main(String[] args) {
+		
+		
+		
+		String name1 = "Nik", name2= "Nik", name3 ="Nikita";
+		
+		if (name1.equals(name2)) {
+			
+			
+			System.out.println(name1 + " and " + name2 + " are the same.");
+			
+		}
+		else {
+			System.out.println(name1 + " and " + name2 + " are NOT the same.");
+		}
+		
+		
+		if (name1.equals(name3)) {
+			
+			System.out.println(name1 + " and " + name3 + " are the same.");
+			
+		}
+		else {
+		
+			System.out.println(name1 + " and " + name3 + " are NOT the same.");
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*TEST RUN
+
+Nik and Nik are the same.
+Nik and Nikita are NOT the same.
+
+*/
+
