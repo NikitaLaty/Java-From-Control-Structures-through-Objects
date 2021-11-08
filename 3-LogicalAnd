@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class LogicalAnd {
+
+	public static void main(String[] args) {
+		
+		
+		double salary;
+		double yearsOnTheJob;
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("Enter your annual salary: ");
+		
+		salary = keyboard.nextDouble();
+		
+		System.out.println("Enter the number of years at your current job: ");
+		
+		yearsOnTheJob = keyboard.nextDouble();
+		
+		if (salary >= 50000 && yearsOnTheJob >= 2) {
+			
+			System.out.println("You qualify for the loan. ");
+			
+		}
+		else {
+			System.out.println("You do not qualify for the loan.");
+		}
+
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*TEST RUN
+
+
+
+Enter your annual salary: 
+80000
+Enter the number of years at your current job: 
+3
+You qualify for the loan. 
+
+
+*/
