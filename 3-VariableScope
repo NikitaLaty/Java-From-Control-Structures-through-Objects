@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+
+public class VariableScope {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("Enter your first name: ");
+		
+		String firstName = keyboard.nextLine();
+		
+		System.out.println("Enter your last name: ");
+		
+		String lastName = keyboard.nextLine();
+		
+		System.out.println("Hello " + firstName + " " + lastName);
+
+
+	}
+
+}
+/* TEST TUN
+
+
+
+Enter your first name: 
+Nicholas
+Enter your last name: 
+Latychev
+Hello Nicholas Latychev
+
+*/
