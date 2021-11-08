@@ -17,6 +17,9 @@ public class ConditionalOperator {
 		System.out.println("Enter Password");
 		password = keyboard.nextLine();
 		
+		
+     	        // also an example of usage  password = username.equals("Nik") ? "Sprite" : "BAD";
+		
 		System.out.println((username.equals("Nik") && password.equals("Sprite")) ? "Access Granted" : "Access Denied");
 		
 		
