@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class Seasons {
+
+	public static void main(String[] args) {
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		
+		String input;
+		
+		System.out.println("Enter the name of the seasons: ");
+		
+		input = keyboard.nextLine();
+		
+		switch (input) {
+		case "spring":
+			System.out.println("La Primavera");
+			break;
+		case "summer":
+			System.out.println("El Verano");
+			break;
+		case "autumn":
+		case "fall":	
+			System.out.println("El Otono");
+			break;
+		case "winter":
+			System.out.println("El Invierno");
+			break;
+
+		default:
+			System.out.println("Please enter one of these words: spring, summer, autumn, fall, or winter");
+		
+		}
+		keyboard.close();
+
+	}
+
+}
+/*TEST RUN
+
+Enter the name of the seasons: 
+fall
+El Otono
+
+
+
+
+
+*/
