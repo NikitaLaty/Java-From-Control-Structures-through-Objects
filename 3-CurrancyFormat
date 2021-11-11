@@ -1,0 +1,25 @@
+
+public class CurrancyFormat {
+
+	public static void main(String[] args) {
+		
+		double monthlyPay = 5000.0;
+		double annualPay = monthlyPay * 12;
+		
+		System.out.printf("You annual pay is $%,.2f\n" , annualPay);
+		
+		
+
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*TEST RUN
+
+You annual pay is $60,000.00
+
+
+*/
