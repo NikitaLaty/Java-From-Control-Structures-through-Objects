@@ -1,0 +1,22 @@
+
+public class FormatSpecific {
+
+	public static void main(String[] args) {
+		
+		
+		
+		double number = 123456789.1234;
+		
+		
+		System.out.printf("The format now looks like this %,.1f", number);
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*TEST RUN
+
+
+The format now looks like this 123,456,789.1
+
+*/
