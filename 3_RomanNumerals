@@ -1,0 +1,71 @@
+import java.util.Scanner;
+
+/**
+ 1. Roman Numerals
+Write a program that prompts the user to enter a number within the range of 1 through
+10. The program should display the Roman numeral version of that number. If the
+number is outside the range of 1 through 10, the program should display an error
+ * @author nikit
+ *
+ */
+public class RomanNumerals {
+
+	public static void main(String[] args) {
+		
+		
+		System.out.println("Please enter a number 1 - 10 to see the roman numeral equivalent. ");
+		Scanner keyboard = new Scanner(System.in);
+
+		int numberEntered = keyboard.nextInt();
+		
+		switch (numberEntered) {
+		case 1:
+			System.out.println(numberEntered + " equals I");
+			break;
+		case 2:
+			System.out.println(numberEntered + " equals II");
+			break;
+		case 3:
+			System.out.println(numberEntered + " equals III");
+			break;
+		case 4:
+			System.out.println(numberEntered + " equals IV");
+			break;
+		case 5:
+			System.out.println(numberEntered + " equals V");
+			break;
+		case 6:
+			System.out.println(numberEntered + " equals VI");
+			break;
+		case 7:
+			System.out.println(numberEntered + " equals VII");
+			break;
+		case 8:
+			System.out.println(numberEntered + " equals VIII");
+			break;
+		case 9:
+			System.out.println(numberEntered + " equals IX");
+			break;
+		case 10:
+			System.out.println(numberEntered + " equals X");
+			break;
+
+		default:
+			System.out.println("Incorrect Input young programmer!");
+			break;
+		}
+		
+		
+
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/* TEST RUN
+Please enter a number 1 - 10 to see the roman numeral equivalent. 
+5
+5 equals V
+*/
+
