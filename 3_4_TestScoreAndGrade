@@ -1,0 +1,76 @@
+import java.util.Scanner;
+
+
+public class TestScoresAndGrades {
+
+	public static void main(String[] args) {
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		double scoreOne;
+		double scoreTwo;
+		double scoreThree;
+		
+		System.out.println("Enter score One");
+		
+		scoreOne = keyboard.nextDouble();
+		
+		System.out.println("Enter score Two");
+		
+		scoreTwo = keyboard.nextDouble();
+		
+		System.out.println("Enter score Three");
+		
+		scoreThree = keyboard.nextDouble();
+		
+		
+		double testScore = (scoreOne + scoreThree + scoreTwo) / 3;
+		
+		
+		
+		
+		System.out.println("Your average is " + testScore);
+		
+		
+		if (testScore < 60) {
+			 
+			System.out.println("Your grade is an F.");
+		}else if (testScore < 70) {
+			
+			System.out.println("Your grade is an D.");
+		}else if (testScore < 80) {
+			
+			System.out.println("Your grade is an C.");
+		}else if (testScore < 90) {
+			
+			System.out.println("Your grade is an B.");
+		}else 
+			System.out.println("Your grade is an A.");
+			
+			System.exit(0);
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+/*
+
+Enter score One
+75
+Enter score Two
+90
+Enter score Three
+90
+Your average is 85.0
+Your grade is an B.
+
+
+*/
+
+
