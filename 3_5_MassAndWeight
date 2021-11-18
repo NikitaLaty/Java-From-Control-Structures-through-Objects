@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class MassAndWeight {
+
+	public static void main(String[] args) {
+		
+		
+		double mass;
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("Enter the objects mass: ");
+		mass = keyboard.nextDouble();
+		
+		double newtons = mass * 9.8;
+		
+		if (newtons <= 10) {
+			
+			System.out.println("The object is to light!");
+			System.out.println("Netwons: " + newtons);
+			
+		}
+		else if (newtons >= 100) {
+			
+			System.out.println("The object is to heavy!");
+			System.out.println("Netwons: " + newtons);
+			
+		}
+		else 
+			System.out.println("Netwons: " + newtons);
+		
+		
+		// TODO Auto-generated method stub
+keyboard.close();
+	}
+
+}
+
+
+/*
+Enter the objects mass: 
+1
+The object is to light!
+Netwons: 9.8
+*/
