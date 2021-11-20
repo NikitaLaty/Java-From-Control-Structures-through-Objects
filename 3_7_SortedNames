@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class SortedNames {
+
+	public static void main(String[] args) {
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		String name1;
+		String name2;
+		String name3;
+		
+		 System.out.println("Enter first name:");
+		 name1 = keyboard.nextLine();
+		 
+		 System.out.println("Enter second name:");
+		 name2 = keyboard.nextLine();
+		 
+		 System.out.println("Enter third name:");
+		 name3 = keyboard.nextLine();
+		 
+		 if( name1.compareTo(name2) < 0 && name1.compareTo(name3) < 0 && name2.compareTo(name3) < 0)
+			 System.out.println(name1 + " " + name2 + " " + name3);
+		
+		 else if( name1.compareTo(name2) < 0 && name1.compareTo(name3) < 0 && name3.compareTo(name2)< 0 )
+			 			 System.out.println(name1 + " " + name3 + " " + name2);
+		 
+		 else if( name2.compareTo(name1) < 0 && name2.compareTo(name3) < 0 && name1.compareTo(name3) < 0 )
+			 System.out.println(name2 + " " + name1 + " " + name3);
+		 
+		 else if( name2.compareTo(name1) < 0 && name2.compareTo(name3) < 0 && name3.compareTo(name1) < 0 )
+			 System.out.println(name2 + " " + name3 + " " + name1);
+		 
+		 
+		 else if( name3.compareTo(name1) < 0 && name3.compareTo(name2) < 0 && name1.compareTo(name2) < 0 )
+			 System.out.println(name3 + " " + name1 + " " + name2);
+		 
+		 else if( name3.compareTo(name1) < 0 && name3.compareTo(name2) < 0 && name2.compareTo(name1) < 0 )
+			 System.out.println(name3 + " " + name2 + " " + name1);
+		 
+		 
+	
+			 
+		 keyboard.close();
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+/*
+Enter first name:
+Charlie
+Enter second name:
+Leslie
+Enter third name:
+Andy
+Andy Charlie Leslie
+*/
+
