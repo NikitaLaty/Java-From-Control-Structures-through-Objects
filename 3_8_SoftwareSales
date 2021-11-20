@@ -1,0 +1,78 @@
+import java.util.Scanner;
+
+public class SoftwareSales {
+
+	public static void main(String[] args) {
+		
+		
+		final double PRICE = 99.0;
+		
+		double quantity = 0;
+		double discount = 0.0;
+		double discountAmount = 0;
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("what is the quantity ordered: ");
+		
+		quantity = keyboard.nextDouble();
+		
+		if (quantity >= 10 && quantity <= 19)
+		{
+			discount = .2;
+			discountAmount = PRICE * quantity * discount;
+			
+		
+		}
+		if (quantity >= 20 && quantity <= 49)
+		{
+			discount = .3;
+			discountAmount = PRICE * quantity * discount;
+			
+			
+		}
+		if (quantity >= 50 && quantity <= 99)
+		{
+			discount = .4;
+			discountAmount = PRICE * quantity * discount;
+			
+			
+		}
+		if (quantity >= 100)
+		{
+			discount = .5;
+			discountAmount = PRICE * quantity * discount;
+			
+			
+			
+		}
+		
+		double total =         PRICE * quantity       - discountAmount		;
+		
+		
+		System.out.println("The total is + $"+ total);
+		
+		System.out.println("Purchased units: " + quantity);
+		
+		System.out.println("The discount amount was $" + discountAmount);
+		
+
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+/*
+
+
+what is the quantity ordered: 
+100
+The total is + $4950.0
+Purchased units: 100.0
+The discount amount was $4950.0
+
+
+*/
