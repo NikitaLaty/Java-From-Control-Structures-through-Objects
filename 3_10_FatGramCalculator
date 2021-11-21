@@ -1,0 +1,67 @@
+import java.util.Scanner;
+
+public class FatGramCalculator {
+
+	public static void main(String[] args) {
+		
+		
+		double calories, fatGrams, caloriesFromFat, percantageOfCaloriesFromFat;
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("Enter number of calories");
+		
+		calories = keyboard.nextDouble();
+		
+		System.out.println("Enter grams of Fat.");
+		
+		fatGrams = keyboard.nextDouble();
+		
+		caloriesFromFat = fatGrams * 9;
+		
+		System.out.println("Calories from fat: " + caloriesFromFat);
+		
+
+		
+		percantageOfCaloriesFromFat = caloriesFromFat / calories;
+		
+		if(caloriesFromFat >= calories)
+		{
+			System.out.println("Invalid input");
+			System.exit(0);
+		}
+		
+		System.out.println("Percentage calories from fat " + percantageOfCaloriesFromFat);
+		
+		if (percantageOfCaloriesFromFat < 0.31)
+			System.out.println("This is a great low fat item.");
+		else
+			System.out.println("This item is high in fat!");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+
+Enter number of calories
+100
+Enter grams of Fat.
+9
+Calories from fat: 81.0
+Percentage calories from fat 0.81
+This item is high in fat!
+
+*/
