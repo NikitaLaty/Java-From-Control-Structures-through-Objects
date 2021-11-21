@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class ShippingCharges {
+
+	public static void main(String[] args) {
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		int weight = 0;
+		double rate = 0;
+		
+		
+		
+		
+		System.out.println("Enter the weight of the package.");
+		
+		weight = keyboard.nextInt();
+		
+		if(weight <= 2) {
+			rate = 1.10;
+		}
+		else if (weight > 2 && weight <= 6) {
+			rate = 2.20;
+			
+		}else if(weight > 6 && weight <= 10) {
+			rate = 3.70;
+		}else 
+			if (weight > 10)
+				rate = 3.80;
+	
+
+		
+
+		
+		System.out.printf("The cost of shipping per 500 miles is $%.2f\n" , rate );
+
+		
+		
+		
+		
+		
+		
+		
+		
+		keyboard.close();
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+Enter the weight of the package.
+10
+The cost of shipping per 500 miles is $3.70
+*/
