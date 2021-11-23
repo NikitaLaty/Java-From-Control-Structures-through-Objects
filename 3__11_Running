@@ -1,0 +1,104 @@
+import java.util.Scanner;
+
+/*
+ * Write a program that askes for the names of three runners and the time in minutes, it took each of them to finish the race,
+ * The program should display the names of the runners in the order that they finish.
+ * 
+ * 
+ */
+public class Running {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		String name1, name2, name3;
+		
+		int min1, min2, min3;
+		
+		System.out.println("Enter runner 1 name:");
+		name1 = keyboard.nextLine();
+		System.out.println("Enter runner 2 name:");
+		name2 = keyboard.nextLine();
+		System.out.println("Enter runner 3 name:");
+		name3 = keyboard.nextLine();
+		
+
+		
+		System.out.println("What time did " + name1 + " finish the race");
+		min1 = keyboard.nextInt();
+		
+		System.out.println("What time did " + name2 + " finish the race");
+		min2 = keyboard.nextInt();
+		
+		System.out.println("What time did " + name3 + " finish the race");
+		min3 = keyboard.nextInt();
+		
+		
+		
+		
+		if(min1 < min2 && min1 < min3 && min2 < min3)
+		{
+		System.out.println("1st:" + name1 + " with " + min1 + " minutes");
+		System.out.println("2nd:" + name2 + " with " + min2 + " minutes");
+		System.out.println("3rd:" + name3 + " with " + min3 + " minutes");
+		}
+		else if(min1 < min2 && min1 < min3 && min3 < min2) {
+		System.out.println("1st:" + name1 + " with " + min1 + " minutes");
+		System.out.println("2nd:" + name3 + " with " + min3 + " minutes");
+		System.out.println("3rd:" + name2 + " with " + min2 + " minutes");
+		}
+		else if(min2 < min1 && min2 < min3 && min1 < min3) {
+		System.out.println("1st:" + name2 + " with " + min2 + " minutes");
+		System.out.println("2nd:" + name1 + " with " + min1 + " minutes");
+		System.out.println("3rd:" + name3 + " with " + min3 + " minutes");
+		}
+		else if(min2 < min1 && min2 < min3 && min3 < min1) {
+			System.out.println("1st:" + name2 + " with " + min2 + " minutes");
+			System.out.println("2nd:" + name3 + " with " + min3 + " minutes");
+			System.out.println("3rd:" + name1 + " with " + min1 + " minutes");
+		}
+		else if(min3 < min1 && min3 < min2 && min1 < min2) {
+			System.out.println("1st:" + name3 + " with " + min3 + " minutes");
+			System.out.println("2nd:" + name1 + " with " + min1 + " minutes");
+			System.out.println("3rd:" + name2 + " with " + min2 + " minutes");
+		}
+		else if(min3 < min1 && min3 < min2 && min2 < min1) {
+			System.out.println("1st:" + name3 + " with " + min3 + " minutes");
+			System.out.println("2nd:" + name2 + " with " + min2 + " minutes");
+			System.out.println("3rd:" + name1 + " with " + min1 + " minutes");
+		}
+		else
+			System.out.println("Error");
+		
+		
+		
+		
+		keyboard.close();
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+Enter runner 1 name:
+Nikita
+Enter runner 2 name:
+Rodger
+Enter runner 3 name:
+Dan
+What time did Nikita finish the race
+5
+What time did Rodger finish the race
+1
+What time did Dan finish the race
+9
+1st:Rodger with 1 minutes
+2nd:Nikita with 5 minutes
+3rd:Dan with 9 minutes
+
+*/
+
+
+
