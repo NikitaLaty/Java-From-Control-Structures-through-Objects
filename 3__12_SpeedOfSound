@@ -1,0 +1,67 @@
+import java.util.Scanner;
+
+public class SpeedOfSound {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		
+		double distance;
+		
+		double time=0;
+		
+		String answer;
+		
+		System.out.println("Enter type of material");
+		
+		answer = keyboard.nextLine();
+		
+
+		
+		System.out.println("Enter distance:");
+		
+		distance = keyboard.nextDouble();
+		
+		
+
+		switch (answer) {
+		case "Air":
+			time = distance /1000;
+			
+			break;
+		case "Water":
+			time = distance /4900;
+			
+			break;
+		case "Metal":
+			time = distance /16400;
+			
+			break;
+
+		default:
+			System.out.println("Wrong input.");
+			break;
+		}
+		
+		System.out.printf("The time it takes to travel is %.2f seconds" , time);
+
+		
+keyboard.close();
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+
+Enter type of material
+Water
+Enter distance:
+4855.643
+The time it takes to travel is 0.99 seconds
+
+*/
+
+
