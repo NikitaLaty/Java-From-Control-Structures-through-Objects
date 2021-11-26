@@ -1,0 +1,93 @@
+import java.util.Scanner;
+
+/**
+ * Write a program thgat calcuilates a customer monthly bill. It should ask the user to
+ * enter the letter of the package the customer has purchased ( A, B C) and the number of
+ * minuets that were used. the program should display the total charges.
+ * @author nikit
+ *
+ */
+public class MobileServiceProvider {
+
+	public static void main(String[] args) {
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("Please enter the plan you have purchased:");
+		
+		char answer = keyboard.nextLine().charAt(0);
+		
+		double total = 0.0;
+		double min = 0.0;
+		double extra = 0;
+		
+		
+		
+		switch (answer) {
+		case 'A':
+		case 'a':
+			
+			System.out.println("How many minuets used:");
+			min = keyboard.nextDouble();
+			
+			if(min > 450) {
+				extra = (min - 450) * .45;
+				total = 39.99 + extra;
+				
+			}
+			else				
+			total = 39.99;
+		break;
+		
+		case 'B':
+		case 'b':
+			System.out.println("How many minuets used:");
+			min = keyboard.nextDouble();
+			if(min > 900) {
+				extra = (min - 900) * .40;
+				total = 59.99 + extra;
+				
+			}
+			else		
+			total = 59.99;
+			break;
+			
+		case 'C':
+		case 'c':
+			total = 69.99;
+			break;
+
+		default:
+			System.out.println("Invalid Plan");
+			break;
+		}
+
+		
+	
+		System.out.printf("You total charges for the month are $%.2f" , total);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		keyboard.close();
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+/*
+
+Please enter the plan you have purchased:
+b
+How many minuets used:
+1000
+You total charges for the month are $99.99
+
+*/
+
