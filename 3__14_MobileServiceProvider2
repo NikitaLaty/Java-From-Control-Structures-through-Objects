@@ -1,0 +1,79 @@
+import java.util.Scanner;
+
+public class MobileServiceProvider2 {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("Please enter the plan you have purchased:");
+		
+		char answer = keyboard.nextLine().charAt(0);
+		
+		double totalA = 0.0;
+		double totalB = 0.0;
+		double totalC = 69.99;
+		
+		System.out.println("Please enter the amount of min used:");
+		
+		double min = keyboard.nextDouble();
+		double extra = 0;
+		
+		if(min > 450) {
+			extra = (min - 450) * .45;
+			totalA = 39.99 + extra;
+			
+		}
+		else				
+		totalA = 39.99;
+		
+		
+		if(min > 900) {
+			extra = (min - 900) * .40;
+			totalB = 59.99 + extra;
+			
+		}
+		else		
+		totalB = 59.99;
+		
+		
+		System.out.println("Plan A cost is " + totalA);
+		System.out.println("Plan B cost is " + totalB);
+		System.out.println("Plan C cost is " + totalC);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		keyboard.close();
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+
+
+Please enter the plan you have purchased:
+C
+Please enter the amount of min used:
+999
+Plan A cost is 287.04
+Plan B cost is 99.59
+Plan C cost is 69.99
+*/
