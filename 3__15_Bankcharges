@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class BankCharges {
+
+	public static void main(String[] args) {
+		
+		
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("How many checks were writen this month:");
+		double serviceFee = 0.0;
+		
+		int checkAmount = keyboard.nextInt();
+		
+		if( checkAmount < 20 )
+			serviceFee = checkAmount * .10;
+		if( checkAmount >= 20 && checkAmount <= 39 )
+			serviceFee = checkAmount * .08;
+		if( checkAmount >= 40 && checkAmount <= 59 )
+			serviceFee = checkAmount * .06;
+		if( checkAmount >= 60)
+			serviceFee = checkAmount * .04;
+		
+		
+		serviceFee += 10;
+		
+		System.out.printf("You monthly service fee is $%.2f",serviceFee );
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+
+How many checks were writen this month:
+60
+You monthly service fee is $12.40
+
+*/
