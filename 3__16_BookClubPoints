@@ -1,0 +1,74 @@
+import java.util.Scanner;
+
+public class BookClubPoints {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		
+		System.out.println("How many books purchased:");
+		
+		int books = keyboard.nextInt();
+		int points = 0;
+		
+		switch (books) {
+		case 0:
+			points = 0;
+			
+			break;
+		case 1:
+			points = 5;
+			
+			break;
+		case 2:
+			points = 15;
+			
+			break;
+		case 3:
+			points = 30;
+			
+			break;
+		case 4:
+			points = 60;
+			
+			break;
+
+		default:
+			points = 60;
+			break;
+		}
+		
+		System.out.println("The number of points earned this month:" + points);
+		
+		
+		
+		
+		
+		
+		
+		
+		keyboard.close();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+
+How many books purchased:
+3
+The number of points earned this month:30
+
+*/
