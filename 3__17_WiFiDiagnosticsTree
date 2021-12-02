@@ -1,0 +1,94 @@
+import java.util.Scanner;
+
+public class WiFiDiagnosticTree {
+
+	public static void main(String[] args) {
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("Reboot the computer and try to connect.");
+		
+		
+		System.out.println("Did that fix the problem");
+		
+		
+		
+		String answer = keyboard.nextLine();
+		
+		
+		if(answer.charAt(0) == 'y')
+		{
+			System.out.println("Good Bye");
+			System.exit(0);;
+			
+		}
+		else {
+			System.out.println("Reboot the router and try to connect.");
+			System.out.println("Did that fix the problem");
+		}
+			answer = keyboard.nextLine();
+			
+		
+			if(answer.charAt(0) == 'y')
+			{
+				System.out.println("Good Bye");
+				System.exit(0);
+				
+			}else {
+				System.out.println("Make sure the cables between the router & modem are plugged in firmly.");
+				System.out.println("Did that fix the problem");
+			}
+			answer = keyboard.nextLine();
+			
+			
+			if(answer.charAt(0) == 'y')
+			{
+				System.out.println("Good Bye");
+				System.exit(0);
+				
+			}else {
+				System.out.println("Move the router to a new location and try to connect.");
+				System.out.println("Did that fix the problem");
+			}
+		
+		
+	       answer = keyboard.nextLine();
+			
+			
+			if(answer.charAt(0) == 'y')
+			{
+				System.out.println("Good Bye");
+				System.exit(0);
+			}else
+				System.out.println("Get a new router.");
+		
+		
+		
+		
+		
+		
+		
+		keyboard.close();
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+
+Reboot the computer and try to connect.
+Did that fix the problem
+n
+Reboot the router and try to connect.
+Did that fix the problem
+n
+Make sure the cables between the router & modem are plugged in firmly.
+Did that fix the problem
+n
+Move the router to a new location and try to connect.
+Did that fix the problem
+n
+Get a new router.
+*/
