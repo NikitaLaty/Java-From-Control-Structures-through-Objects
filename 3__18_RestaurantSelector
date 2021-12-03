@@ -1,0 +1,119 @@
+import java.util.Scanner;
+
+public class RestaurantSelector {
+
+	public static void main(String[] args) {
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		boolean vegan = false, vegetarian = false, gluten = false;
+		
+		System.out.println("Is anyone in the party a vegetarian");
+		String answer = keyboard.nextLine();
+		if(answer.charAt(0) == 'y')
+			vegetarian = true;
+		
+		System.out.println("Is anyone in the party a vegan");
+		answer = keyboard.nextLine();
+		if(answer.charAt(0) == 'y')
+			vegan = true;
+		
+		System.out.println("Is anyone in the party a glutten-free");
+		answer = keyboard.nextLine();
+		if(answer.charAt(0) == 'y')
+			gluten = true;
+		
+		
+		System.out.println("Here are your restaurant choices");
+		if(vegetarian & vegan & gluten) {
+			System.out.println("The Chef's Kitchen");
+			System.out.println("Corner Cafe");
+			
+		
+		
+		}
+		if(!vegetarian & !vegan & !gluten) {
+			System.out.println("Joe's Gournmet Burger");
+			System.out.println("Main Street Pizza Company");
+			System.out.println("Corner Cafe");
+			System.out.println("Mama's Fine Italian");
+			System.out.println("The Chef's Kitchen");
+
+		}
+		
+		if(vegetarian & !vegan & !gluten) {
+			System.out.println("Main Street Pizza Company");
+			System.out.println("Corner Cafe");
+			System.out.println("Mama's Fine Italian");
+			System.out.println("The Chef's Kitchen");
+			
+		}
+		if(vegan & !vegetarian  & !gluten) {
+			
+			System.out.println("Corner Cafe");
+			System.out.println("The Chef's Kitchen");
+			
+		}
+		if(gluten & !vegetarian & !vegan ) {
+			
+			System.out.println("Corner Cafe");
+			System.out.println("Main Street Pizza Company");
+			System.out.println("The Chef's Kitchen");
+			
+		}
+		if(vegetarian & vegan & !gluten) {
+		
+			System.out.println("Corner Cafe");
+			System.out.println("Main Street Pizza Company");
+			System.out.println("The Chef's Kitchen");
+		
+		
+		}
+		
+		if(vegetarian & gluten & !vegan) {
+			System.out.println("Main Street Pizza Company");
+			System.out.println("Corner Cafe");
+			System.out.println("The Chef's Kitchen");
+			
+			
+	
+			
+			
+		}
+		
+		if(vegan & gluten & !vegetarian) {
+		
+			System.out.println("Corner Cafe");
+			System.out.println("The Chef's Kitchen");
+			
+			
+			
+			
+			
+		}
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+/*
+
+Is anyone in the party a vegetarian
+yes
+Is anyone in the party a vegan
+no
+Is anyone in the party a glutten-free
+yes
+Here are your restaurant choices
+Main Street Pizza Company
+Corner Cafe
+The Chef's Kitchen
+
+
+*/
+
+
