@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+public class CheckTemperature {
+
+	public static void main(String[] args) {
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		
+		final double MAX_TEMP = 102.5;
+		
+		double temprature;
+		
+		System.out.println("Enter the substance's Celsius temperature: ");
+		
+		temprature = keyboard.nextDouble();
+		
+		while( temprature > MAX_TEMP)
+		{
+			
+			System.out.println("The temperature is to high. Turn the");
+			System.out.println("thermostat down and wait 5 minuets.");
+			System.out.println("Then, take the Celsius temperature again");
+			System.out.println("and enter it here: ");
+			temprature = keyboard.nextDouble();
+			
+			
+			
+			
+			
+			
+		}
+		
+		System.out.println("The temperature is acceptable.");
+		System.out.println("Check it again in 15 minutes.");
+		
+		
+		
+
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+/*
+Enter the substance's Celsius temperature: 
+150
+The temperature is to high. Turn the
+thermostat down and wait 5 minuets.
+Then, take the Celsius temperature again
+and enter it here: 
+103
+The temperature is to high. Turn the
+thermostat down and wait 5 minuets.
+Then, take the Celsius temperature again
+and enter it here: 
+100
+The temperature is acceptable.
+Check it again in 15 minutes.
+
+*/
+
+
