@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class ValidateNumber {
+
+	public static void main(String[] args) {
+		
+		
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		
+		System.out.println("Enter a number 1 to 100");
+		
+		int num = keyboard.nextInt();
+		
+		while(num < 0 || num > 100)
+		{
+			
+			
+			
+			System.out.println("Enter a number 1 to 100");
+			
+			
+			 num = keyboard.nextInt();
+			
+			
+		}
+		
+		
+		System.out.println("Number " + num + " is acceptable.");
+		
+		
+		
+		keyboard.close();
+		
+
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+/*
+
+Enter a number 1 to 100
+111
+Enter a number 1 to 100
+123
+Enter a number 1 to 100
+99
+Number 99 is acceptable.
+
+
+*/
+
