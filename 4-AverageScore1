@@ -1,0 +1,90 @@
+
+import java.util.Scanner;
+
+public class TestAverage1 {
+
+	public static void main(String[] args) {
+		
+
+		
+		
+		
+		double score1, score2, score3;
+		char repeat;
+		double average;
+		
+		String input;
+		
+		System.out.println("This program evaluates the average of three scores.");
+
+		Scanner keyboard = new Scanner(System.in);
+
+		do {
+			
+			System.out.println("Enter score# 1: ");
+
+			score1 = keyboard.nextDouble();
+			
+			System.out.println("Enter score# 2: ");
+			
+			score2 = keyboard.nextDouble();
+			
+			System.out.println("Enter score# 3: ");
+			
+			score3 = keyboard.nextDouble();
+			
+			keyboard.nextLine();
+			
+			
+			average = (score1 + score2 + score3) / 3.0;
+			
+			System.out.println("The average is " + average);
+			
+			System.out.println();
+			
+			System.out.println("Try again?");
+			System.out.println("Enter y for yes or N for no: ");
+			
+			input = keyboard.nextLine();
+			
+			repeat = input.charAt(0);
+			
+		} while (repeat == 'y' || repeat == 'Y');
+		
+		
+			
+		
+		keyboard.close();
+		
+	}
+
+}
+
+/*
+
+This program evaluates the average of three scores.
+Enter score# 1: 
+100
+Enter score# 2: 
+90
+Enter score# 3: 
+80
+The average is 90.0
+
+Try again?
+Enter y for yes or N for no: 
+yre.
+Enter score# 1: 
+100
+Enter score# 2: 
+90
+Enter score# 3: 
+95
+The average is 95.0
+
+Try again?
+Enter y for yes or N for no: 
+no
+
+*/
+
