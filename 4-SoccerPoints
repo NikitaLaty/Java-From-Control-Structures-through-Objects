@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+public class SoccerPoints {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		int points;
+		int totalPoints = 0;
+		
+		
+		
+		System.out.println("enter the number of points your team");
+		System.out.println("has earned for each game this season.");
+		System.out.println("Enter -1 when finished.");
+		System.out.println();
+		
+		System.out.println("Enter game points or -1 to end: ");
+		
+		points = keyboard.nextInt();
+		
+		while (points != -1) {
+			
+			totalPoints += points;
+			
+			System.out.println("Enter game points or -1 to end: ");
+			points = keyboard.nextInt();
+			
+		}
+		
+		System.out.println("The total points are " + totalPoints);
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+
+enter the number of points your team
+has earned for each game this season.
+Enter -1 when finished.
+
+Enter game points or -1 to end: 
+5
+Enter game points or -1 to end: 
+4
+Enter game points or -1 to end: 
+89
+Enter game points or -1 to end: 
+4
+Enter game points or -1 to end: 
+5
+Enter game points or -1 to end: 
+6
+Enter game points or -1 to end: 
+3
+Enter game points or -1 to end: 
+4
+Enter game points or -1 to end: 
+-1
+The total points are 120
+
+*/
+
