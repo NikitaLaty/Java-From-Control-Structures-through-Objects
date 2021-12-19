@@ -1,0 +1,71 @@
+import java.util.Scanner;
+
+public class RectanglePattern {
+
+	public static void main(String[] args) {
+		
+		
+		
+		int rows, cols;
+		
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("How many rows? ");
+		rows = keyboard.nextInt();
+		
+		System.out.println("How many columns? ");
+		cols = keyboard.nextInt();
+		
+		for (int r = 0; r < rows ; r++) {
+			
+			for (int c = 0; c < cols; c++) {
+				System.out.print("*");
+				
+			}
+			
+			System.out.println("");
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+/*
+
+How many rows? 
+4
+How many columns? 
+3
+***
+***
+***
+***
+
+*/
+
