@@ -1,0 +1,42 @@
+
+public class Clock {
+
+	public static void main(String[] args) {
+		
+		
+		for (int hours = 0; hours <= 12; hours++) {
+			
+			for (int minuets = 0; minuets <= 59 ; minuets++) {
+				
+				for (int seconds = 0; seconds <= 59; seconds++) {
+					
+					System.out.printf("%02d:%02d:%02d\n" , hours, minuets, seconds);
+					
+				}
+				
+			}
+		}
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+
+
+
+.....
+
+12:59:49
+12:59:50
+12:59:51
+12:59:52
+12:59:53
+12:59:54
+12:59:55
+12:59:56
+12:59:57
+12:59:58
+12:59:59
+
+*/
