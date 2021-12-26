@@ -1,0 +1,55 @@
+import java.util.Scanner;
+import java.io.*;
+
+
+public class ReadFirstLine {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("Enter the name of a the file: ");
+		
+		String filename = keyboard.nextLine();
+		
+		File file = new File(filename);
+		
+		Scanner inputFile = new Scanner(file);
+		
+		
+		while( inputFile.hasNext())
+		{
+			
+			System.out.println(inputFile.nextLine());
+
+			
+		}
+		
+
+		inputFile.close();
+		
+		keyboard.close();
+		
+
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+/*
+Enter the name of a the file: 
+friends.txt
+Yan
+Dan
+Rodger
+Joe
+Abrahim
+Masha
+Krystalle
+Inna
+???
+
+*/
