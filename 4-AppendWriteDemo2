@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class AppendWriteDemo2 {
+
+	public static void main(String[] args) throws IOException {
+		
+		
+		FileWriter friendFile = new FileWriter("friends.txt", true);
+		
+		PrintWriter outputFile = new PrintWriter(friendFile);
+		Scanner keyboard = new Scanner(System.in);
+
+		outputFile.println("Masha");
+		outputFile.println("Krystalle");
+		outputFile.println("Inna");
+		outputFile.println("???");
+		
+		
+		outputFile.close();
+		keyboard.close();
+		
+		System.out.println("Data written to the file.");
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
