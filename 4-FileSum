@@ -1,0 +1,44 @@
+import java.util.Scanner;
+import java.io.*;
+
+
+public class FileSum {
+
+	public static void main(String[] args) throws IOException{
+		
+		double sum = 0.0;
+		
+		
+		File file = new File("friends.txt");
+		
+		Scanner inputFile = new Scanner(file);
+		
+		while(inputFile.hasNext())
+		{
+			double number = inputFile.nextDouble();
+			
+			sum = sum + number;
+		}
+		
+		
+		
+		inputFile.close();
+		
+		System.out.println("The sum of the numbers is friends.txt is " + sum);
+		
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+/*
+The sum of the numbers is friends.txt is 467.0
+*/
