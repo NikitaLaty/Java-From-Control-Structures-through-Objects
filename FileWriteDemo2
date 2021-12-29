@@ -1,0 +1,73 @@
+
+
+import java.util.Scanner;
+
+import java.io.*;
+
+
+public class FileWriteDemo2 {
+
+	public static void main(String[] args) throws IOException {
+		
+		
+		String filename;
+		String carName;
+		int numCars;
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("How many cars do you have?");
+		
+		numCars = keyboard.nextInt();
+		
+		keyboard.nextLine();
+		
+		System.out.println("Enter filename: ");
+		filename =  keyboard.nextLine();
+		
+		File file = new File(filename);
+		if(file.exists())
+		{
+			System.out.println("The filename " + filename + " already exists.");
+			
+			System.exit(0);
+			
+		}
+		
+		PrintWriter outputFile = new PrintWriter(file);
+		
+		for (int i = 0; i < numCars; i++) {
+			
+			
+			System.out.println("Enter the name of car " + i + ": ");
+			
+			carName = keyboard.nextLine();
+			
+			outputFile.println(carName);
+
+			
+		}
+		
+
+		outputFile.close();
+		System.out.println("Data written to the file.");
+
+
+	}
+
+}
+
+/*
+
+How many cars do you have?
+2
+Enter filename: 
+Cars.txt
+Enter the name of car 0: 
+Acura
+Enter the name of car 1: 
+Toyota
+Data written to the file.
+
+*/
+
