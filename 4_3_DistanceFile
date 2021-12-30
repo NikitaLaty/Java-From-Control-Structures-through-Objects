@@ -1,0 +1,78 @@
+import java.util.Scanner;
+import java.io.*;
+
+public class DistanceFile {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		
+		
+		int distance;
+		int time;
+		int speed;
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("Enter the time traveled");
+		time = keyboard.nextInt();
+		
+		if(time < 1)
+		{
+			System.out.println("Time can not be less than 1");
+			System.exit(0);
+		}
+		
+		System.out.println("Enter the speed traveled");
+		speed = keyboard.nextInt();
+		
+		if(speed <= 0)
+		{
+			System.out.println("Speed can not be less than 0");
+			System.exit(0);
+		}
+		
+	   distance = (time * speed);
+	   
+	   PrintWriter outFile = new PrintWriter("distance.txt");
+	   
+	   outFile.println("Hour \t\t\t Distance Traveled");
+	   System.out.println("Hour \t\t\t Distance Traveled");
+	   for (int i = 1 ; i <= time ; i++) 
+	   {
+		   
+	    System.out.println(i + "\t\t\t" + (i*speed));	   
+        outFile.println(i + "\t\t\t" + (i*speed));	   
+		   
+		   
+		   
+		   
+		
+	   }
+		
+
+		outFile.close();
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+
+Enter the time traveled
+3
+Enter the speed traveled
+40
+Hour 			 Distance Traveled
+1			40
+2			80
+3			120
+
+
+*/
+
+
+
