@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class SunOfNumbers {
+
+	public static void main(String[] args) {
+		
+		
+		System.out.println("Enter any number > ");
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		int number = keyboard.nextInt();
+		int sum = 0 ;
+		
+		
+		for (int i = 1; i <= number ; i++) {
+			
+			
+			
+			System.out.println("The total is " + sum + " ... adding " + i + " to the total.");
+			
+			sum += i;
+			
+			
+			
+			
+		}
+		
+		System.out.println("The final total count " + sum);
+		
+
+		
+
+
+	}
+
+}
+/*
+
+Enter any number > 
+5
+The total is 0 ... adding 1 to the total.
+The total is 1 ... adding 2 to the total.
+The total is 3 ... adding 3 to the total.
+The total is 6 ... adding 4 to the total.
+The total is 10 ... adding 5 to the total.
+The final total count 15
+
+*/
+
+
