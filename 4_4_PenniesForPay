@@ -1,0 +1,101 @@
+import java.util.Scanner;
+
+public class PenniesForPay {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		int days;
+		
+		System.out.println("Enter days worked >");
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		days = keyboard.nextInt();
+		double sum = 0;
+		double penny = 1;
+		for (int i = 1; i <= days; i++) {
+			
+	
+		
+			System.out.printf("Paid day " + i + " $%,.2f " , (penny/100));
+			System.out.println("");
+			sum= sum + penny;
+			penny = penny*2;
+			
+			
+			
+			
+			
+			
+		}
+		
+		System.out.printf("$%,.2f" ,sum/100);
+		
+		
+		
+		
+		
+		
+		//1+2+4+8+16+32+64
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+Enter days worked >
+31
+Paid day 1 $0.01 
+Paid day 2 $0.02 
+Paid day 3 $0.04 
+Paid day 4 $0.08 
+Paid day 5 $0.16 
+Paid day 6 $0.32 
+Paid day 7 $0.64 
+Paid day 8 $1.28 
+Paid day 9 $2.56 
+Paid day 10 $5.12 
+Paid day 11 $10.24 
+Paid day 12 $20.48 
+Paid day 13 $40.96 
+Paid day 14 $81.92 
+Paid day 15 $163.84 
+Paid day 16 $327.68 
+Paid day 17 $655.36 
+Paid day 18 $1,310.72 
+Paid day 19 $2,621.44 
+Paid day 20 $5,242.88 
+Paid day 21 $10,485.76 
+Paid day 22 $20,971.52 
+Paid day 23 $41,943.04 
+Paid day 24 $83,886.08 
+Paid day 25 $167,772.16 
+Paid day 26 $335,544.32 
+Paid day 27 $671,088.64 
+Paid day 28 $1,342,177.28 
+Paid day 29 $2,684,354.56 
+Paid day 30 $5,368,709.12 
+Paid day 31 $10,737,418.24 
+$21,474,836.47
+
+*/
+
+
