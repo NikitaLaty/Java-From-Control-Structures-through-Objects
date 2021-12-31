@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class LetterCounter {
+
+	public static void main(String[] args) {
+		
+		
+		
+		String toCount;
+		char letter;
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("Enter a string >");
+		
+		toCount = keyboard.nextLine();
+		
+		int size = toCount.length();
+		
+		System.out.println("Enter a letter to count in the string >");
+		
+		String letter2 = keyboard.nextLine();
+		
+		letter = letter2.charAt(0);
+		
+		int counter = 0;
+		
+		
+		for (int i = 0; i < size ; i++) {
+			
+			if(toCount.charAt(i) == letter )
+				counter++;
+			
+			
+			
+		}
+		
+		System.out.println("The number of accurances of "+ letter2 + " is " + counter);
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+Enter a string >
+Little Mary had a Lamb
+Enter a letter to count in the string >
+a
+The number of accurances of a is 4
+
+*/
