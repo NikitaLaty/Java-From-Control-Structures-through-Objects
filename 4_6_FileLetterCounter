@@ -1,0 +1,105 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class FileLetterCounter {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		
+		
+		
+				Scanner keyboard = new Scanner(System.in);
+
+				System.out.println("Enter file name: ");
+		
+				File files = new File(keyboard.nextLine());
+		
+		
+				
+		if(!files.exists()) {
+			
+			System.out.println("File not found");
+			System.exit(0);
+			
+			
+		}
+		else {
+			System.out.println("File found!");
+		}
+		
+		System.out.println("Enter letter to search.");
+		
+		String line = keyboard.nextLine();
+		
+		Scanner fileSearch = new Scanner(files);
+
+		
+		char letterToSearch = line.charAt(0);
+		
+		int counter = 0;
+		String test;
+	while(fileSearch.hasNext())
+	{
+		test = fileSearch.next();
+		
+		for (int i = 0; i < test.length(); i++) {
+			
+			System.out.println("Testing " + test);
+			
+			if(test.charAt(i)== letterToSearch)
+			{
+				System.out.println("Match found."); 
+				counter++;
+			}
+			
+		}
+		
+	}
+		
+		
+		System.out.println("Total count of " + letterToSearch + " is " + counter );
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+Enter file name: 
+Cars.txt
+File found!
+Enter letter to search.
+a
+Testing acura
+Match found.
+Testing acura
+Testing acura
+Testing acura
+Testing acura
+Match found.
+Testing Toyota
+Testing Toyota
+Testing Toyota
+Testing Toyota
+Testing Toyota
+Testing Toyota
+Match found.
+Total count of a is 3
+*/
