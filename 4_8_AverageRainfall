@@ -1,0 +1,72 @@
+import java.util.Scanner;
+
+public class AverageRainfall {
+
+	public static void main(String[] args) {
+		
+		
+		int years;
+		int inches = 0;
+		System.out.println("How many years>");
+		Scanner keyboard = new Scanner(System.in);
+		years = keyboard.nextInt();
+		
+		for (int i = 0; i < years ; i++) {
+			
+			for (int j = 1 ; j <= 12 ; j++) {
+				
+				System.out.println("How many inches of rain in " + j);
+				
+				inches += keyboard.nextInt();
+				
+				
+				
+				
+			}
+
+			
+		}
+		
+		int totalMonths = years * 12;
+		
+		System.out.println("The total months : " + totalMonths);
+		System.out.println("Total inches of rain : " + inches);
+		System.out.println("Average rain fall per month : " + ((double)inches/(double)totalMonths));
+		
+		
+
+
+	}
+
+}
+/*
+How many years>
+1
+How many inches of rain in 1
+5
+How many inches of rain in 2
+12
+How many inches of rain in 3
+20
+How many inches of rain in 4
+25
+How many inches of rain in 5
+12
+How many inches of rain in 6
+52
+How many inches of rain in 7
+5
+How many inches of rain in 8
+5
+How many inches of rain in 9
+7
+How many inches of rain in 10
+6
+How many inches of rain in 11
+1
+How many inches of rain in 12
+5
+The total months : 12
+Total inches of rain : 155
+Average rain fall per month : 12.916666666666666
+*/
