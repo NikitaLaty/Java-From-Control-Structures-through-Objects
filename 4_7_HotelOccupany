@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class HotelOccupancy {
+
+	public static void main(String[] args) {
+		
+		int floors;
+		int totalNumberOfRooms=0;
+		int numberOfRoomsOccupied=0;
+		double occupancyRate;
+		
+		System.out.println("How many floors are in the building.");
+		Scanner keyboard = new Scanner(System.in);
+		
+		floors = keyboard.nextInt();
+		
+		for (int i = 1; i <= floors ; i++) {
+			
+			System.out.println("Floor " + i);
+			System.out.println("What is the number of rooms on the floor?");
+			totalNumberOfRooms += keyboard.nextInt();
+			System.out.println("How many are occupied?");
+			numberOfRoomsOccupied += keyboard.nextInt();
+			
+			
+			
+			
+			
+		}
+		occupancyRate = ( (double)numberOfRoomsOccupied/ (double)totalNumberOfRooms)*100
+				;
+		System.out.println("Total rooms: " + totalNumberOfRooms);
+		System.out.println("Number of them occupied " + numberOfRoomsOccupied);
+		System.out.printf("Occupancy rate %,.2f%%",  occupancyRate);
+		
+
+
+	}
+
+}
+/*
+How many floors are in the building.
+2
+Floor 1
+What is the number of rooms on the floor?
+5
+How many are occupied?
+1
+Floor 2
+What is the number of rooms on the floor?
+5
+How many are occupied?
+1
+Total rooms: 10
+Number of them occupied 2
+Occupancy rate 20.00%
+*/
+
