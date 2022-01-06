@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class Population {
+
+	public static void main(String[] args) {
+		
+		double startingNumber;
+		double dailyIncrease;
+		double totalPop = 0 ;
+		int days;
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("Enter starting number of organism.");
+		
+		startingNumber = keyboard.nextInt();
+		
+		System.out.println("Enter percentage of increase.");
+		
+		dailyIncrease = keyboard.nextDouble() ;
+		
+		dailyIncrease = (dailyIncrease/100) + 1;
+		
+		
+		System.out.println("Enter number of days.");
+		
+		days = keyboard.nextInt();
+		
+		
+		
+		totalPop = startingNumber;
+		
+		for (int i = 1; i <= days; i++) {
+			
+			System.out.println("Day " + i + " population: " + startingNumber + " after: " + dailyIncrease * startingNumber  );
+			totalPop += startingNumber;
+			startingNumber = dailyIncrease * startingNumber;
+			
+			
+
+		}
+		
+		
+		System.out.println("The total pop is " + totalPop);
+
+
+	}
+
+}
