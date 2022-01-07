@@ -1,0 +1,92 @@
+import java.util.Scanner;
+
+public class LargestSmallest {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+
+		int smallest=0;
+		int largest=0;
+		int placeholder=0;
+		
+		Scanner keyboard = new Scanner(System.in);
+
+	
+		System.out.println("Enter a number");
+		smallest = keyboard.nextInt();
+		
+		System.out.println("Enter a number");
+		largest = keyboard.nextInt();
+		
+		int temp;
+		if( smallest > largest) {
+			temp =largest;
+			largest = smallest;
+			smallest = temp;
+			
+		}
+		
+		
+		
+		do {
+			
+		System.out.println("Enter a number");	
+		placeholder = keyboard.nextInt();
+		if(placeholder != -99)
+		{
+		
+			if(placeholder < smallest) 
+			smallest = placeholder;
+				
+		
+			if(placeholder > largest)
+			largest = placeholder;
+		
+		}
+		
+		
+		
+			
+		}while(placeholder !=  - 99);
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	
+	
+	System.out.println("The smallest number > " + smallest);
+	System.out.println("The largest number > " + largest);
+	
+	
+	
+	}
+
+}
+/*
+Enter a number
+97
+Enter a number
+34
+Enter a number
+5
+Enter a number
+3
+Enter a number
+5
+Enter a number
+1
+Enter a number
+-99
+The smallest number > 1
+The largest number > 97
+*/
+
