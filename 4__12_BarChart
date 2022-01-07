@@ -1,0 +1,93 @@
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class BarChart {
+
+	public static void main(String[] args) {
+		
+		
+		int store1;
+		int store2;
+		int store3;
+		int store4;
+		int store5;
+	
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("Enter store 1 sales");
+		store1 =keyboard.nextInt();
+		System.out.println("Enter store 2 sales");
+		store2 =keyboard.nextInt();
+		System.out.println("Enter store 3 sales");
+		store3 =keyboard.nextInt();
+		System.out.println("Enter store 4 sales");
+		store4 =keyboard.nextInt();
+		System.out.println("Enter store 5 sales");
+		store5 =keyboard.nextInt();
+		
+		
+		System.out.print("Store 1: ");
+		store1 = store1/100;
+		for (int i = 0; i < store1 ; i++) {
+			
+			System.out.print("*");
+			
+		}
+		System.out.println("");
+		System.out.print("Store 2: ");
+		store2 = store2/100;
+		for (int i = 0; i < store2 ; i++) {
+			
+			System.out.print("*");
+			
+		}
+		System.out.println("");
+		System.out.print("Store 3: ");
+		store3 = store3/100;
+		for (int i = 0; i < store3 ; i++) {
+			
+			System.out.print("*");
+			
+		}
+		System.out.println("");
+		System.out.print("Store 4: ");
+		store4 = store4/100;
+		for (int i = 0; i < store4 ; i++) {
+			
+			System.out.print("*");
+			
+		}
+		System.out.println("");
+		System.out.print("Store 5: ");
+		store5 = store5/100;
+		for (int i = 0; i < store5 ; i++) {
+			
+			System.out.print("*");
+			
+		}
+		
+		
+
+
+	}
+
+}
+/*
+Enter store 1 sales
+1000
+Enter store 2 sales
+2000
+Enter store 3 sales
+3000
+Enter store 4 sales
+7000
+Enter store 5 sales
+2000
+Store 1: **********
+Store 2: ********************
+Store 3: ******************************
+Store 4: **********************************************************************
+Store 5: ********************
+
+*/
+
