@@ -1,0 +1,55 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class LineNumbers {
+
+	public static void main(String[] args)throws FileNotFoundException {
+		
+		
+		System.out.println("Enter file name >");
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		//String filename = keyboard.nextLine();
+		
+		File file = new File(keyboard.nextLine());
+		
+		Scanner fileSearch = new Scanner(file);
+		
+		int counter = 1;
+		
+		while(fileSearch.hasNext())
+		{
+			
+			
+			
+			System.out.print(counter +": ");
+			System.out.println(fileSearch.nextLine());
+			counter++;
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+Enter file name >
+friends.txt
+1: 1.Friends:
+2: 2.Yan
+3: 3.Rodger
+4: 4.Dan
+5: 5.Joe
+6: 6.Brooklyn
+*/
+
