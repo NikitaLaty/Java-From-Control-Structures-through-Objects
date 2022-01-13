@@ -1,0 +1,51 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class FileHeadDisplay {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		
+		System.out.println("Enter file name >");
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		//String filename = keyboard.nextLine();
+		
+		File file = new File(keyboard.nextLine());
+		
+		Scanner fileSearch = new Scanner(file);
+		
+		int counter = 0;
+		
+		while(fileSearch.hasNext())
+		{
+			
+			if( counter == 5 )break;
+			
+			counter++;
+			System.out.println(fileSearch.nextLine());
+			
+		}
+		
+		
+		
+		
+
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+Enter file name >
+friends.txt
+1.Friends:
+2.Yan
+3.Rodger
+4.Dan
+5.Joe
+*/
+
