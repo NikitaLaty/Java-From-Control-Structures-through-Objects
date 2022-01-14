@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+public class BudgetAnalysis {
+
+	public static void main(String[] args) {
+		
+		
+		double budget = 0;
+		
+		System.out.println("Enter your monthly budget");
+		Scanner keyboard = new Scanner(System.in);
+
+		budget = keyboard.nextDouble();
+		
+		System.out.println("Enter your monthly expenses, enter 0 to stop");
+		
+		double expense = 0;
+		double total = 0;
+		do{
+			
+			System.out.println("Expense");
+			expense = keyboard.nextDouble();
+			total += expense;
+			
+			
+			
+			
+		}while(expense !=0);
+		
+		
+		double monthlyTotal = budget - total;
+		
+		if(monthlyTotal > 0)
+		{
+			System.out.println("You are over budget");
+		}else if( monthlyTotal < 0)
+		{
+			System.out.println("You are under budger");
+		}
+		else
+			System.out.println("Brake even.");
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+
+Enter your monthly budget
+100
+Enter your monthly expenses, enter 0 to stop
+Expense
+50
+Expense
+300
+Expense
+50
+Expense
+0
+You are under budger
+
+*/
