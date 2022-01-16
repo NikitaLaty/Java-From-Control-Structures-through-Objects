@@ -1,0 +1,61 @@
+import java.util.Random;
+
+public class DiceGame {
+
+	public static void main(String[] args) {
+		
+		
+		Random random = new Random();
+
+	System.out.println("==Dice Game==");
+	
+	int user=0;
+	int cpu=0;
+	
+	int userScore=0;
+	int cpuScore=0;
+	
+	for (int i = 0; i < 10; i++) {
+		
+		user = random.nextInt(6)+1;
+		cpu = random.nextInt(6)+1;
+		
+		if(user > cpu) userScore++;
+		if(user < cpu) cpuScore++;
+		
+		System.out.println("Player: " + user + " CPU: " + cpu);
+		
+		user=0;
+		cpu=0;
+		
+		
+	}
+		
+		
+		System.out.println("Total Score");
+		System.out.println("Player: "+userScore + " | " + "CPU: " + cpuScore);
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+==Dice Game==
+Player: 5 CPU: 6
+Player: 4 CPU: 6
+Player: 4 CPU: 5
+Player: 1 CPU: 1
+Player: 1 CPU: 1
+Player: 4 CPU: 3
+Player: 6 CPU: 6
+Player: 1 CPU: 6
+Player: 2 CPU: 4
+Player: 5 CPU: 3
+Total Score
+Player: 2 | CPU: 5
+*/
