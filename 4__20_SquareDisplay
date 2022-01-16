@@ -1,0 +1,50 @@
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class SquareDisplay {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		int number ;
+		
+		System.out.println("Enter a number to square and display > ");
+		
+		number = keyboard.nextInt();
+		
+		for (int i = 0; i < number ; i++) {
+			
+			for (int j = 0; j < number ; j++) {
+				
+				System.out.print("X");
+				
+			}
+			System.out.println("");
+		}
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+Enter a number to square and display > 
+10
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+*/
