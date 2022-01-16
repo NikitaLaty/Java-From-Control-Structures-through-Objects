@@ -1,0 +1,265 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class SlotMachineSimulation {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Stinking Rich Machine");
+		
+		int money;
+		
+		Random random = new Random();
+		int ran = 0;
+		
+		System.out.println("Insert Money > ");
+		Scanner keyboard = new Scanner(System.in);
+
+		money = keyboard.nextInt();
+		
+		 keyboard.nextLine();
+		
+	
+		String fruit="";
+		
+		int slot1;
+		int slot2;
+		int slot3;
+		
+		do {
+		
+			money -= 10;
+			
+			slot1 = random.nextInt(6);
+	
+			switch (slot1) {
+			case 0:
+				fruit = "Cherries";
+				break;
+				case 1:
+				fruit = "Oranges";
+				break;
+			case 2:
+				fruit = "Plums";
+				break;
+			case 3:
+				fruit = "Bells";
+				break;
+			case 4:
+				fruit = "Mellons";
+				break;
+			case 5:
+				fruit = "Bars";
+				break;
+			default:
+				break;
+			
+
+			}
+			System.out.print("| "+ fruit +" | \t" );
+			
+			slot2 = random.nextInt(6);
+			switch (slot2) {
+			case 0:
+				fruit = "Cherries";
+				break;
+			case 1:
+				fruit = "Oranges";
+				break;
+			case 2:
+				fruit = "Plums";
+				break;
+			case 3:
+				fruit = "Bells";
+				break;
+			case 4:
+				fruit = "Mellons";
+				break;
+			case 5:
+				fruit = "Bars";
+				break;
+			default:
+				break;
+				
+				
+				
+				
+				
+			}
+			System.out.print("| "+ fruit +" | \t" );
+			
+			slot3 = random.nextInt(6);
+			switch (slot3) {
+			case 0:
+				fruit = "Cherries";
+				break;
+			case 1:
+				fruit = "Oranges";
+				break;
+			case 2:
+				fruit = "Plums";
+				break;
+			case 3:
+				fruit = "Bells";
+				break;
+			case 4:
+				fruit = "Mellons";
+				break;
+			case 5:
+				fruit = "Bars";
+				break;
+			default:
+				break;
+				
+				
+				
+				
+				
+			}
+			System.out.print("| "+ fruit +" | \t" );
+			
+			if(slot1==slot2 || slot1==slot3 || slot2 ==slot3)money+=10;
+			if(slot1==slot2 && slot1 == slot3)money+=100;
+			
+			System.out.println("Credit remaining $" + money);
+					
+			
+		} while(money > 0);
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+Stinking Rich Machine
+Insert Money > 
+200
+| Bars | 	| Cherries | 	| Bells | 	Credit remaining $190
+| Mellons | 	| Mellons | 	| Oranges | 	Credit remaining $190
+| Bars | 	| Bars | 	| Cherries | 	Credit remaining $190
+| Mellons | 	| Mellons | 	| Oranges | 	Credit remaining $190
+| Oranges | 	| Bars | 	| Plums | 	Credit remaining $180
+| Oranges | 	| Bells | 	| Cherries | 	Credit remaining $170
+| Plums | 	| Mellons | 	| Bells | 	Credit remaining $160
+| Plums | 	| Cherries | 	| Bells | 	Credit remaining $150
+| Plums | 	| Bells | 	| Plums | 	Credit remaining $150
+| Bars | 	| Bars | 	| Mellons | 	Credit remaining $150
+| Bells | 	| Oranges | 	| Cherries | 	Credit remaining $140
+| Oranges | 	| Cherries | 	| Oranges | 	Credit remaining $140
+| Mellons | 	| Cherries | 	| Bells | 	Credit remaining $130
+| Bars | 	| Bars | 	| Bars | 	Credit remaining $230
+| Bars | 	| Plums | 	| Mellons | 	Credit remaining $220
+| Bars | 	| Cherries | 	| Bells | 	Credit remaining $210
+| Bars | 	| Cherries | 	| Bars | 	Credit remaining $210
+| Oranges | 	| Cherries | 	| Bells | 	Credit remaining $200
+| Mellons | 	| Cherries | 	| Mellons | 	Credit remaining $200
+| Mellons | 	| Cherries | 	| Cherries | 	Credit remaining $200
+| Oranges | 	| Cherries | 	| Mellons | 	Credit remaining $190
+| Plums | 	| Cherries | 	| Bars | 	Credit remaining $180
+| Bars | 	| Plums | 	| Bells | 	Credit remaining $170
+| Plums | 	| Mellons | 	| Bells | 	Credit remaining $160
+| Bars | 	| Bells | 	| Cherries | 	Credit remaining $150
+| Bars | 	| Bars | 	| Oranges | 	Credit remaining $150
+| Cherries | 	| Bars | 	| Plums | 	Credit remaining $140
+| Oranges | 	| Mellons | 	| Bells | 	Credit remaining $130
+| Bars | 	| Mellons | 	| Oranges | 	Credit remaining $120
+| Cherries | 	| Oranges | 	| Plums | 	Credit remaining $110
+| Bells | 	| Bells | 	| Mellons | 	Credit remaining $110
+| Bells | 	| Bars | 	| Cherries | 	Credit remaining $100
+| Cherries | 	| Bars | 	| Oranges | 	Credit remaining $90
+| Bells | 	| Cherries | 	| Bars | 	Credit remaining $80
+| Plums | 	| Plums | 	| Plums | 	Credit remaining $180
+| Plums | 	| Bars | 	| Mellons | 	Credit remaining $170
+| Bars | 	| Plums | 	| Oranges | 	Credit remaining $160
+| Cherries | 	| Bars | 	| Plums | 	Credit remaining $150
+| Bars | 	| Plums | 	| Plums | 	Credit remaining $150
+| Bells | 	| Bells | 	| Bells | 	Credit remaining $250
+| Mellons | 	| Cherries | 	| Cherries | 	Credit remaining $250
+| Bars | 	| Cherries | 	| Bars | 	Credit remaining $250
+| Bars | 	| Oranges | 	| Bars | 	Credit remaining $250
+| Mellons | 	| Oranges | 	| Oranges | 	Credit remaining $250
+| Bars | 	| Cherries | 	| Mellons | 	Credit remaining $240
+| Plums | 	| Plums | 	| Bells | 	Credit remaining $240
+| Plums | 	| Mellons | 	| Plums | 	Credit remaining $240
+| Bells | 	| Mellons | 	| Oranges | 	Credit remaining $230
+| Bells | 	| Bells | 	| Oranges | 	Credit remaining $230
+| Plums | 	| Mellons | 	| Mellons | 	Credit remaining $230
+| Plums | 	| Oranges | 	| Bars | 	Credit remaining $220
+| Cherries | 	| Cherries | 	| Mellons | 	Credit remaining $220
+| Bars | 	| Oranges | 	| Bells | 	Credit remaining $210
+| Bars | 	| Mellons | 	| Plums | 	Credit remaining $200
+| Bells | 	| Plums | 	| Oranges | 	Credit remaining $190
+| Bells | 	| Bars | 	| Mellons | 	Credit remaining $180
+| Cherries | 	| Mellons | 	| Mellons | 	Credit remaining $180
+| Bells | 	| Bells | 	| Oranges | 	Credit remaining $180
+| Bars | 	| Cherries | 	| Bells | 	Credit remaining $170
+| Cherries | 	| Cherries | 	| Cherries | 	Credit remaining $270
+| Bars | 	| Oranges | 	| Oranges | 	Credit remaining $270
+| Bells | 	| Oranges | 	| Cherries | 	Credit remaining $260
+| Oranges | 	| Cherries | 	| Mellons | 	Credit remaining $250
+| Plums | 	| Plums | 	| Mellons | 	Credit remaining $250
+| Mellons | 	| Oranges | 	| Oranges | 	Credit remaining $250
+| Plums | 	| Cherries | 	| Oranges | 	Credit remaining $240
+| Plums | 	| Oranges | 	| Plums | 	Credit remaining $240
+| Bells | 	| Bars | 	| Bells | 	Credit remaining $240
+| Cherries | 	| Plums | 	| Plums | 	Credit remaining $240
+| Mellons | 	| Cherries | 	| Bars | 	Credit remaining $230
+| Plums | 	| Mellons | 	| Cherries | 	Credit remaining $220
+| Bells | 	| Mellons | 	| Cherries | 	Credit remaining $210
+| Cherries | 	| Plums | 	| Oranges | 	Credit remaining $200
+| Oranges | 	| Plums | 	| Oranges | 	Credit remaining $200
+| Plums | 	| Plums | 	| Bars | 	Credit remaining $200
+| Plums | 	| Bars | 	| Bells | 	Credit remaining $190
+| Oranges | 	| Bars | 	| Bars | 	Credit remaining $190
+| Oranges | 	| Mellons | 	| Mellons | 	Credit remaining $190
+| Bells | 	| Bars | 	| Bars | 	Credit remaining $190
+| Bars | 	| Oranges | 	| Cherries | 	Credit remaining $180
+| Bells | 	| Oranges | 	| Mellons | 	Credit remaining $170
+| Oranges | 	| Bars | 	| Plums | 	Credit remaining $160
+| Plums | 	| Bars | 	| Bars | 	Credit remaining $160
+| Cherries | 	| Oranges | 	| Plums | 	Credit remaining $150
+| Oranges | 	| Oranges | 	| Bells | 	Credit remaining $150
+| Oranges | 	| Plums | 	| Plums | 	Credit remaining $150
+| Cherries | 	| Oranges | 	| Cherries | 	Credit remaining $150
+| Cherries | 	| Cherries | 	| Oranges | 	Credit remaining $150
+| Cherries | 	| Bars | 	| Oranges | 	Credit remaining $140
+| Bars | 	| Oranges | 	| Cherries | 	Credit remaining $130
+| Plums | 	| Mellons | 	| Bars | 	Credit remaining $120
+| Mellons | 	| Oranges | 	| Bells | 	Credit remaining $110
+| Oranges | 	| Bells | 	| Mellons | 	Credit remaining $100
+| Bars | 	| Plums | 	| Bells | 	Credit remaining $90
+| Cherries | 	| Bars | 	| Plums | 	Credit remaining $80
+| Oranges | 	| Cherries | 	| Bars | 	Credit remaining $70
+| Bars | 	| Bars | 	| Bars | 	Credit remaining $170
+| Bells | 	| Cherries | 	| Oranges | 	Credit remaining $160
+| Oranges | 	| Plums | 	| Plums | 	Credit remaining $160
+| Oranges | 	| Mellons | 	| Bells | 	Credit remaining $150
+| Cherries | 	| Oranges | 	| Bells | 	Credit remaining $140
+| Bars | 	| Bars | 	| Mellons | 	Credit remaining $140
+| Oranges | 	| Mellons | 	| Cherries | 	Credit remaining $130
+| Bars | 	| Cherries | 	| Plums | 	Credit remaining $120
+| Cherries | 	| Oranges | 	| Oranges | 	Credit remaining $120
+| Cherries | 	| Bells | 	| Mellons | 	Credit remaining $110
+| Cherries | 	| Plums | 	| Cherries | 	Credit remaining $110
+| Cherries | 	| Cherries | 	| Oranges | 	Credit remaining $110
+| Bars | 	| Plums | 	| Bells | 	Credit remaining $100
+| Mellons | 	| Oranges | 	| Plums | 	Credit remaining $90
+| Plums | 	| Mellons | 	| Bells | 	Credit remaining $80
+| Mellons | 	| Bars | 	| Plums | 	Credit remaining $70
+| Mellons | 	| Bells | 	| Mellons | 	Credit remaining $70
+| Bars | 	| Plums | 	| Bars | 	Credit remaining $70
+| Bells | 	| Mellons | 	| Bars | 	Credit remaining $60
+| Bars | 	| Oranges | 	| Plums | 	Credit remaining $50
+| Mellons | 	| Plums | 	| Bars | 	Credit remaining $40
+| Oranges | 	| Plums | 	| Bells | 	Credit remaining $30
+| Oranges | 	| Mellons | 	| Bars | 	Credit remaining $20
+| Cherries | 	| Mellons | 	| Cherries | 	Credit remaining $20
+| Bells | 	| Cherries | 	| Bars | 	Credit remaining $10
+| Cherries | 	| Mellons | 	| Oranges | 	Credit remaining $0
+*/
