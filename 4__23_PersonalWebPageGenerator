@@ -1,0 +1,75 @@
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class PersonalWebPageGenerator {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		System.out.println("Enter your name: ");
+		Scanner keyboard = new Scanner(System.in);
+
+		String name = keyboard.nextLine();
+		
+		System.out.println("Enter about yourself");
+		
+		String info = keyboard.nextLine();
+		
+		PrintWriter webPage = new PrintWriter("webpage.html");
+		
+
+		webPage.println("<html>");
+		webPage.println("<head>");
+		webPage.println("</head>");
+		webPage.println("<body>");
+		webPage.println("\t<center>");
+		webPage.println("\t\t<h1>"+name+"</h1>");
+		webPage.println("\t</center>");
+		webPage.println("<hr />");
+		webPage.println(info);
+		webPage.println("<hr />");
+		webPage.println("</body>");
+		webPage.println("</html>");
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		webPage.close();
+		keyboard.close();
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+
+Enter your name: 
+Nik Tesla
+Enter about yourself
+I'm 33 years old and I live in Philadelphia, PA.
+
+
+
+<html>
+<head>
+</head>
+<body>
+	<center>
+		<h1>Nik Tesla</h1>
+	</center>
+<hr />
+I'm 33 years old and I live in Philadelphia, PA.
+<hr />
+</body>
+</html>
+*/
