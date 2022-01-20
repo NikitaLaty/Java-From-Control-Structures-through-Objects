@@ -1,0 +1,50 @@
+import javax.swing.JOptionPane;
+
+public class CreditCard {
+
+	public static void main(String[] args) {
+		
+		
+		
+		 double salary;
+		 int creditRating;
+		 String input;
+		 
+		 input = JOptionPane.showInputDialog("What is your annual salary?");
+		 
+		 salary = Double.parseDouble(input);
+		
+		input = JOptionPane.showInputDialog("What is your credit score?");
+		
+		creditRating = Integer.parseInt(input);
+		
+		
+		if(salary >50000 && creditRating > 650)
+		{
+			qualify();
+		}else
+			noQualify();
+		
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static void qualify()
+	{
+		JOptionPane.showMessageDialog(null,"You qualify, Congratulations!");
+	}
+	
+	public static void noQualify() {
+		
+		JOptionPane.showMessageDialog(null,"We're sorry, You do not qualify for the credit card!");
+
+	}
+
+}
