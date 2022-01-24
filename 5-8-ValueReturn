@@ -1,0 +1,45 @@
+/**
+ * This program demonstrates a value-returning method.
+ * @author nikit
+ *
+ */
+public class ValueReturn {
+
+	public static void main(String[] args) {
+		
+		
+		int total;
+		
+		int value1 = 20, value2 = 40;
+		
+		
+		
+			total = sum(value1,value2);
+			System.out.println("The total is " + total);
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+	/**
+	 * The sum method returns the sum of its two parameters
+	 * @param v1 first number
+	 * @param v2 second number
+	 * @return the sum of v1 and v2
+	 */
+	public static int sum(int v1, int v2)
+	{
+		
+		
+		return v1 + v2;
+	}
+
+}
+/*
+The total is 60
+*/
