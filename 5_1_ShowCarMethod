@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class ShowCarMethod {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("Enter a word. ");
+		
+		String word = keyboard.nextLine();
+		
+		System.out.println("Enter the location number in the word to display");
+		
+		int place = keyboard.nextInt();
+		
+		keyboard.nextLine();
+		
+		char letter = showChar(word, place);
+		
+		System.out.println("In the word " + word + " letter in location " + place + " is " + letter);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		keyboard.close();
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+	
+	
+	public static char showChar(String word, int place)
+	{
+		char letter;
+		
+		letter = word.charAt(place);
+		
+		
+		
+		return letter;
+	}
+
+}
+/*
+Enter a word. 
+Nikita
+Enter the location number in the word to display
+5
+In the word Nikita letter in location 5 is a
+*/
