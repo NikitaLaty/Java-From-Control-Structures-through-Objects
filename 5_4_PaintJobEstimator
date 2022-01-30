@@ -1,0 +1,99 @@
+import java.util.Scanner;
+
+public class PaintJobEstimator {
+
+	public static void main(String[] args) {
+		
+		final double LABOR = 18.00;
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("How many rooms to paint >");
+		
+		int rooms = keyboard.nextInt();
+		
+		System.out.println("What is the square feet of wall space");
+		
+		int squareFeet = keyboard.nextInt();
+		
+		
+    	//keyboard.nextLine();
+		System.out.println("What is the price of a paint per gallon >");
+		double price = keyboard.nextDouble();
+		
+		double GalllonsOfPaintRequired = paintRequiredAmount(rooms, squareFeet);
+		
+		double hours = hoursOfLabor(rooms, squareFeet);
+		
+		double costforPaint = costOfPaint(GalllonsOfPaintRequired, price);
+		
+		double costLabor = costOfLabor(hours, LABOR);
+		
+		double totalCost = totalCost(costLabor, costforPaint);
+		
+		System.out.println("Number of Gallons need for the job " + GalllonsOfPaintRequired);
+		System.out.println("Number of hours need for the job " + hours);
+		System.out.println("Total cost for the paint $" + costforPaint);
+		System.out.println("Total cost for labor $" + costLabor);
+		System.out.println("Total for the Job $" + totalCost);
+		
+
+	}
+	
+	public static double paintRequiredAmount(double rooms, double square)
+	{
+		
+		double GallonsOfpaint = (rooms * 4 * square)/115;
+		
+		return GallonsOfpaint;
+	}
+	
+	public static double hoursOfLabor(double rooms, double square)
+	{
+		
+		double hours = (rooms * 4 * square) /115 * 8 ;
+		
+		
+		
+		
+		return hours;
+	}
+	
+	public static double costOfPaint(double gallons, double paintPrice)
+	{
+		
+		double cost = gallons * paintPrice;
+		
+		return cost;
+		
+		
+	}
+	public static double costOfLabor(double hours, double laborCost)
+	{
+		double costLabor = hours * laborCost;
+		return costLabor;
+	}
+	
+	
+	public static double totalCost(double paintExpense,double laborExpense )
+	{
+		double total = paintExpense + laborExpense;
+		return total;
+	}
+
+}
+/*
+How many rooms to paint >
+4
+What is the square feet of wall space
+115
+What is the price of a paint per gallon >
+25
+Number of Gallons need for the job 16.0
+Number of hours need for the job 128.0
+Total cost for the paint $400.0
+Total cost for labor $2304.0
+Total for the Job $2704.0
+*/
+
+
