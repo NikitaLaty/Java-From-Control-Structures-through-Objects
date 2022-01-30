@@ -1,0 +1,46 @@
+import javax.swing.JOptionPane;
+
+public class RetailPriceCalculator {
+
+	public static void main(String[] args) {
+		
+		
+		double wholesaleprince;
+		double markUp;
+		double retailprice;
+		
+		
+		
+		
+		String j = JOptionPane.showInputDialog("Enter product whole sale price > ");
+   
+		wholesaleprince = Double.parseDouble(j);
+		
+		String k = JOptionPane.showInputDialog("Enter mark up > ");
+		
+		markUp = Double.parseDouble(k);
+		
+		
+		
+		JOptionPane.showMessageDialog(null,"The retail price will be " + String.format("$%,.2f",calculateRetail(markUp, wholesaleprince)));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static double calculateRetail(double mark, double whole) {
+
+		
+		return (mark/100+1) * whole;
+
+	}
+
+}
