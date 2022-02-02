@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class FallingDistance {
+
+	public static void main(String[] args) {
+		
+		
+		
+		System.out.println("Enter a number of seconds to travel");
+		
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		int time = keyboard.nextInt();
+		
+		for (int i = 0; i < time; i++) 
+		{
+		
+			//System.out.println("Distance at "+i+" seconds is "+ fallDistance(i) + " meters");
+			System.out.printf("Distance at %d seconds is %,.2f \n" , i, fallDistance(i)) ;
+			
+
+		}
+		
+		
+
+
+	}
+	
+	public static double fallDistance(int t)
+	
+	{
+		double distance;
+		
+		distance = (1.0/2.0)*(9.8)*(t);
+		
+	
+		
+		return distance;
+		
+	}
+	
+
+}
+/*
+Enter a number of seconds to travel
+15
+Distance at 0 seconds is 0.00 
+Distance at 1 seconds is 4.90 
+Distance at 2 seconds is 9.80 
+Distance at 3 seconds is 14.70 
+Distance at 4 seconds is 19.60 
+Distance at 5 seconds is 24.50 
+Distance at 6 seconds is 29.40 
+Distance at 7 seconds is 34.30 
+Distance at 8 seconds is 39.20 
+Distance at 9 seconds is 44.10 
+Distance at 10 seconds is 49.00 
+Distance at 11 seconds is 53.90 
+Distance at 12 seconds is 58.80 
+Distance at 13 seconds is 63.70 
+Distance at 14 seconds is 68.60 
+*/+
+
