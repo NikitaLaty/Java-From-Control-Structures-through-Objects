@@ -1,0 +1,205 @@
+
+public class CelsiusTemperatureTable {
+
+	public static void main(String[] args) {
+
+
+		for (int i = 50; i <= 212; i++) {
+			
+			
+			
+			System.out.println("Fahrenheit: " + i + "F | Celsius: " + String.format(" %,.2f" , celsius(i))+ "C");
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+	
+	public static double celsius(int f)
+	{
+		
+		double cel = (5.0/9.0)*(f - 32);
+		
+		return cel;
+		
+		
+		
+	}
+	
+	
+	
+
+}
+/*
+Fahrenheit: 50F | Celsius:  10.00C
+Fahrenheit: 51F | Celsius:  10.56C
+Fahrenheit: 52F | Celsius:  11.11C
+Fahrenheit: 53F | Celsius:  11.67C
+Fahrenheit: 54F | Celsius:  12.22C
+Fahrenheit: 55F | Celsius:  12.78C
+Fahrenheit: 56F | Celsius:  13.33C
+Fahrenheit: 57F | Celsius:  13.89C
+Fahrenheit: 58F | Celsius:  14.44C
+Fahrenheit: 59F | Celsius:  15.00C
+Fahrenheit: 60F | Celsius:  15.56C
+Fahrenheit: 61F | Celsius:  16.11C
+Fahrenheit: 62F | Celsius:  16.67C
+Fahrenheit: 63F | Celsius:  17.22C
+Fahrenheit: 64F | Celsius:  17.78C
+Fahrenheit: 65F | Celsius:  18.33C
+Fahrenheit: 66F | Celsius:  18.89C
+Fahrenheit: 67F | Celsius:  19.44C
+Fahrenheit: 68F | Celsius:  20.00C
+Fahrenheit: 69F | Celsius:  20.56C
+Fahrenheit: 70F | Celsius:  21.11C
+Fahrenheit: 71F | Celsius:  21.67C
+Fahrenheit: 72F | Celsius:  22.22C
+Fahrenheit: 73F | Celsius:  22.78C
+Fahrenheit: 74F | Celsius:  23.33C
+Fahrenheit: 75F | Celsius:  23.89C
+Fahrenheit: 76F | Celsius:  24.44C
+Fahrenheit: 77F | Celsius:  25.00C
+Fahrenheit: 78F | Celsius:  25.56C
+Fahrenheit: 79F | Celsius:  26.11C
+Fahrenheit: 80F | Celsius:  26.67C
+Fahrenheit: 81F | Celsius:  27.22C
+Fahrenheit: 82F | Celsius:  27.78C
+Fahrenheit: 83F | Celsius:  28.33C
+Fahrenheit: 84F | Celsius:  28.89C
+Fahrenheit: 85F | Celsius:  29.44C
+Fahrenheit: 86F | Celsius:  30.00C
+Fahrenheit: 87F | Celsius:  30.56C
+Fahrenheit: 88F | Celsius:  31.11C
+Fahrenheit: 89F | Celsius:  31.67C
+Fahrenheit: 90F | Celsius:  32.22C
+Fahrenheit: 91F | Celsius:  32.78C
+Fahrenheit: 92F | Celsius:  33.33C
+Fahrenheit: 93F | Celsius:  33.89C
+Fahrenheit: 94F | Celsius:  34.44C
+Fahrenheit: 95F | Celsius:  35.00C
+Fahrenheit: 96F | Celsius:  35.56C
+Fahrenheit: 97F | Celsius:  36.11C
+Fahrenheit: 98F | Celsius:  36.67C
+Fahrenheit: 99F | Celsius:  37.22C
+Fahrenheit: 100F | Celsius:  37.78C
+Fahrenheit: 101F | Celsius:  38.33C
+Fahrenheit: 102F | Celsius:  38.89C
+Fahrenheit: 103F | Celsius:  39.44C
+Fahrenheit: 104F | Celsius:  40.00C
+Fahrenheit: 105F | Celsius:  40.56C
+Fahrenheit: 106F | Celsius:  41.11C
+Fahrenheit: 107F | Celsius:  41.67C
+Fahrenheit: 108F | Celsius:  42.22C
+Fahrenheit: 109F | Celsius:  42.78C
+Fahrenheit: 110F | Celsius:  43.33C
+Fahrenheit: 111F | Celsius:  43.89C
+Fahrenheit: 112F | Celsius:  44.44C
+Fahrenheit: 113F | Celsius:  45.00C
+Fahrenheit: 114F | Celsius:  45.56C
+Fahrenheit: 115F | Celsius:  46.11C
+Fahrenheit: 116F | Celsius:  46.67C
+Fahrenheit: 117F | Celsius:  47.22C
+Fahrenheit: 118F | Celsius:  47.78C
+Fahrenheit: 119F | Celsius:  48.33C
+Fahrenheit: 120F | Celsius:  48.89C
+Fahrenheit: 121F | Celsius:  49.44C
+Fahrenheit: 122F | Celsius:  50.00C
+Fahrenheit: 123F | Celsius:  50.56C
+Fahrenheit: 124F | Celsius:  51.11C
+Fahrenheit: 125F | Celsius:  51.67C
+Fahrenheit: 126F | Celsius:  52.22C
+Fahrenheit: 127F | Celsius:  52.78C
+Fahrenheit: 128F | Celsius:  53.33C
+Fahrenheit: 129F | Celsius:  53.89C
+Fahrenheit: 130F | Celsius:  54.44C
+Fahrenheit: 131F | Celsius:  55.00C
+Fahrenheit: 132F | Celsius:  55.56C
+Fahrenheit: 133F | Celsius:  56.11C
+Fahrenheit: 134F | Celsius:  56.67C
+Fahrenheit: 135F | Celsius:  57.22C
+Fahrenheit: 136F | Celsius:  57.78C
+Fahrenheit: 137F | Celsius:  58.33C
+Fahrenheit: 138F | Celsius:  58.89C
+Fahrenheit: 139F | Celsius:  59.44C
+Fahrenheit: 140F | Celsius:  60.00C
+Fahrenheit: 141F | Celsius:  60.56C
+Fahrenheit: 142F | Celsius:  61.11C
+Fahrenheit: 143F | Celsius:  61.67C
+Fahrenheit: 144F | Celsius:  62.22C
+Fahrenheit: 145F | Celsius:  62.78C
+Fahrenheit: 146F | Celsius:  63.33C
+Fahrenheit: 147F | Celsius:  63.89C
+Fahrenheit: 148F | Celsius:  64.44C
+Fahrenheit: 149F | Celsius:  65.00C
+Fahrenheit: 150F | Celsius:  65.56C
+Fahrenheit: 151F | Celsius:  66.11C
+Fahrenheit: 152F | Celsius:  66.67C
+Fahrenheit: 153F | Celsius:  67.22C
+Fahrenheit: 154F | Celsius:  67.78C
+Fahrenheit: 155F | Celsius:  68.33C
+Fahrenheit: 156F | Celsius:  68.89C
+Fahrenheit: 157F | Celsius:  69.44C
+Fahrenheit: 158F | Celsius:  70.00C
+Fahrenheit: 159F | Celsius:  70.56C
+Fahrenheit: 160F | Celsius:  71.11C
+Fahrenheit: 161F | Celsius:  71.67C
+Fahrenheit: 162F | Celsius:  72.22C
+Fahrenheit: 163F | Celsius:  72.78C
+Fahrenheit: 164F | Celsius:  73.33C
+Fahrenheit: 165F | Celsius:  73.89C
+Fahrenheit: 166F | Celsius:  74.44C
+Fahrenheit: 167F | Celsius:  75.00C
+Fahrenheit: 168F | Celsius:  75.56C
+Fahrenheit: 169F | Celsius:  76.11C
+Fahrenheit: 170F | Celsius:  76.67C
+Fahrenheit: 171F | Celsius:  77.22C
+Fahrenheit: 172F | Celsius:  77.78C
+Fahrenheit: 173F | Celsius:  78.33C
+Fahrenheit: 174F | Celsius:  78.89C
+Fahrenheit: 175F | Celsius:  79.44C
+Fahrenheit: 176F | Celsius:  80.00C
+Fahrenheit: 177F | Celsius:  80.56C
+Fahrenheit: 178F | Celsius:  81.11C
+Fahrenheit: 179F | Celsius:  81.67C
+Fahrenheit: 180F | Celsius:  82.22C
+Fahrenheit: 181F | Celsius:  82.78C
+Fahrenheit: 182F | Celsius:  83.33C
+Fahrenheit: 183F | Celsius:  83.89C
+Fahrenheit: 184F | Celsius:  84.44C
+Fahrenheit: 185F | Celsius:  85.00C
+Fahrenheit: 186F | Celsius:  85.56C
+Fahrenheit: 187F | Celsius:  86.11C
+Fahrenheit: 188F | Celsius:  86.67C
+Fahrenheit: 189F | Celsius:  87.22C
+Fahrenheit: 190F | Celsius:  87.78C
+Fahrenheit: 191F | Celsius:  88.33C
+Fahrenheit: 192F | Celsius:  88.89C
+Fahrenheit: 193F | Celsius:  89.44C
+Fahrenheit: 194F | Celsius:  90.00C
+Fahrenheit: 195F | Celsius:  90.56C
+Fahrenheit: 196F | Celsius:  91.11C
+Fahrenheit: 197F | Celsius:  91.67C
+Fahrenheit: 198F | Celsius:  92.22C
+Fahrenheit: 199F | Celsius:  92.78C
+Fahrenheit: 200F | Celsius:  93.33C
+Fahrenheit: 201F | Celsius:  93.89C
+Fahrenheit: 202F | Celsius:  94.44C
+Fahrenheit: 203F | Celsius:  95.00C
+Fahrenheit: 204F | Celsius:  95.56C
+Fahrenheit: 205F | Celsius:  96.11C
+Fahrenheit: 206F | Celsius:  96.67C
+Fahrenheit: 207F | Celsius:  97.22C
+Fahrenheit: 208F | Celsius:  97.78C
+Fahrenheit: 209F | Celsius:  98.33C
+Fahrenheit: 210F | Celsius:  98.89C
+Fahrenheit: 211F | Celsius:  99.44C
+Fahrenheit: 212F | Celsius:  100.00C
+*/
