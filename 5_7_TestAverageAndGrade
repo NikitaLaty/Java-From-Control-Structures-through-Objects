@@ -1,0 +1,95 @@
+import java.util.Scanner;
+
+public class TestAverageandGrade {
+
+	public static void main(String[] args) {
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("Enter score 1");
+		int s1 = keyboard.nextInt();
+		System.out.println("Enter score 2");
+		int s2 = keyboard.nextInt();
+		System.out.println("Enter score 3");
+		int s3 = keyboard.nextInt();
+		System.out.println("Enter score 4");
+		int s4 = keyboard.nextInt();
+		System.out.println("Enter score 5");
+		int s5 = keyboard.nextInt();
+		
+		
+			
+			System.out.println("Letter grade for score " + s1 + " :" + determineGrade(s1));
+			System.out.println("Letter grade for score " + s2 + " :" + determineGrade(s2));
+			System.out.println("Letter grade for score " + s3 + " :" + determineGrade(s3));
+			System.out.println("Letter grade for score " + s4 + " :" + determineGrade(s4));
+			System.out.println("Letter grade for score " + s5 + " :" + determineGrade(s5));
+			
+
+		System.out.println("The average for the 5 scores is " + calcAverage(s1, s2, s3, s4, s5));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+	
+	public static double calcAverage(int s1, int s2, int s3, int s4, int s5)
+	{
+		double ave = (s1 + s2 + s3 + s4 + s5) / 5.0;
+		
+		
+		
+		return ave;
+	}
+	public static char determineGrade(int testScore)
+	{
+		char grade;
+		
+		if (testScore < 60) {
+			 
+			grade = 'F';
+		}else if (testScore < 70) {
+			
+			grade = 'D';
+		}else if (testScore < 80) {
+			
+			grade = 'C';
+		}else if (testScore < 90) {
+			
+			grade = 'B';;
+		}else 
+			grade = 'A';
+	
+		
+		
+		return grade;
+	}
+	
+
+}
+/*
+Enter score 1
+100
+Enter score 2
+50
+Enter score 3
+80
+Enter score 4
+70
+Enter score 5
+90
+Letter grade for score 100 :A
+Letter grade for score 50 :F
+Letter grade for score 80 :B
+Letter grade for score 70 :C
+Letter grade for score 90 :A
+The average for the 5 scores is 78.0
+*/
+
