@@ -1,0 +1,119 @@
+import java.util.Scanner;
+
+
+public class ConversionProgram {
+
+	public static void main(String[] args) {
+		
+		
+		
+
+		double meter = 0;
+		Scanner keyboard = new Scanner(System.in);
+
+		int choice = 0;
+		
+		while(true)
+		{
+			
+			while(meter <= 0) {
+			System.out.println("Enter meter");
+			meter = keyboard.nextDouble();
+			}
+			menu();
+			
+			
+			choice = keyboard.nextInt();
+			keyboard.nextLine();
+			
+			switch (choice) {
+			case 1:
+				toKilometere(meter);
+				break;
+			case 2:
+				toInches(meter);
+				break;
+			case 3:
+				toFeet(meter);
+				break;
+			case 4:
+				exit();
+				break;
+
+			default:
+				System.out.println("Invalid choice exiting");
+				exit();
+				break;
+			}
+			
+			
+			
+			meter = 0;
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static void toKilometere(double meter)
+	{
+		double kilo = meter * 0.001;
+		
+		System.out.println("In Kilometer " + kilo);
+	}
+	public static void toInches(double meter)
+	{
+		double inches = meter * 39.37;
+		
+		System.out.println("In Inches " + inches);
+	}
+	public static void toFeet(double meter)
+	{
+		double feet = meter * 3.281;
+		
+		System.out.println("In Feet " + feet);
+	}
+	public static void exit()
+	{
+		System.exit(0);
+		
+	}
+	public static void menu()
+	{
+		System.out.println("Select conversion formula");
+		System.out.println("1: to kilometer");
+		System.out.println("2: to inches");
+		System.out.println("3: to feet");
+		System.out.println("4: quit");
+		
+		
+	}
+
+}
+/*
+Enter meter
+4
+Select conversion formula
+1: to kilometer
+2: to inches
+3: to feet
+4: quit
+5
+Invalid choice exiting
+*/
