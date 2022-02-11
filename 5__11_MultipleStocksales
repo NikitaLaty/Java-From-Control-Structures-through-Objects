@@ -1,0 +1,77 @@
+import java.util.Scanner;
+
+public class MultipleStocksales {
+
+	public static void main(String[] args) {
+		Scanner keyboard = new Scanner(System.in);
+		double NS=0, PP=0, PC=0,SP=0, SC=0;
+		
+		
+
+char again ='k';
+String ok;
+double total= 0;
+		
+		do {
+		System.out.println("Enter the nuber of shares");
+		NS = keyboard.nextDouble();
+		System.out.println("Enter the purchace price per share");
+		PP = keyboard.nextDouble();
+		System.out.println("Enter the purchase commission paid ");
+		PC = keyboard.nextDouble();
+		System.out.println("Enter the sale price per share");
+		SP = keyboard.nextDouble();
+		System.out.println("Enter the sale commission paid");
+		SC = keyboard.nextDouble();
+		keyboard.nextLine();
+		
+		System.out.println("More transactions?>");
+		ok= keyboard.nextLine();
+		
+		again = ok.charAt(0);
+		
+	total+= 	profit(NS, PP, PC, SP, SC);
+		
+		}while(again == 'n');
+		
+		System.out.println("Total profit is " + total);
+			
+		}
+	
+	 public static double profit(double NS, double PP, double PC, double SP, double SC)
+	 {
+		 double profitOrLoss = ((NS * SP) - SC) - ((NS * PP) + PC);
+		 
+		 
+		 return profitOrLoss;
+	 }
+
+
+}
+/*
+Enter the nuber of shares
+1
+Enter the purchace price per share
+10
+Enter the purchase commission paid 
+0
+Enter the sale price per share
+20
+Enter the sale commission paid
+0
+More transactions?>
+n
+Enter the nuber of shares
+1
+Enter the purchace price per share
+10
+Enter the purchase commission paid 
+0
+Enter the sale price per share
+20
+Enter the sale commission paid
+0
+More transactions?>
+y
+Total profit is 20.0
+*/
