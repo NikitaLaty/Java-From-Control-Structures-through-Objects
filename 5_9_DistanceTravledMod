@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class DistanceTravledMed {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Enter speed>");
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		double speed = keyboard.nextDouble();
+		
+		System.out.println("Enter time");
+		
+		double time = keyboard.nextDouble();
+		
+		System.out.println("The distance travled is " + distance(speed, time));
+		
+		
+	}
+	
+	public static double distance(double speed, double time)
+	{
+		double distance = speed * time;
+		
+		return distance;
+	}
+
+}
+/*
+Enter speed>
+695
+Enter time
+60
+The distance travled is 41700.0
+*/
+
