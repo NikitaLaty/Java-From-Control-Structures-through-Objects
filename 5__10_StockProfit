@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class StockProfit {
+
+	public static void main(String[] args) {
+		
+		double NS, PP, PC,SP, SC;
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("Enter the nuber of shares");
+		NS = keyboard.nextDouble();
+		System.out.println("Enter the purchace price per share");
+		PP = keyboard.nextDouble();
+		System.out.println("Enter the purchase commission paid ");
+		PC = keyboard.nextDouble();
+		System.out.println("Enter the sale price per share");
+		SP = keyboard.nextDouble();
+		System.out.println("Enter the sale commission paid");
+		SC = keyboard.nextDouble();
+		
+		
+		System.out.println("The profit is " + profit(NS, PP, PC, SP, SC));
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+	
+	 public static double profit(double NS, double PP, double PC, double SP, double SC)
+	 {
+		 double profitOrLoss = ((NS * SP) - SC) - ((NS * PP) + PC);
+		 
+		 
+		 return profitOrLoss;
+	 }
+
+}
+/*
+Enter the nuber of shares
+100
+Enter the purchace price per share
+105
+Enter the purchase commission paid 
+.05
+Enter the sale price per share
+150
+Enter the sale commission paid
+.05
+The profit is 4499.9000000000015
+*/
+
