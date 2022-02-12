@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class KineticEnergy {
+
+	public static void main(String[] args) {
+		
+		
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("Enter mass of the objects");
+		
+		double mass = keyboard.nextDouble();
+		
+		System.out.println("Enter objects velocity");
+		
+		double velocity = keyboard.nextDouble();
+		
+		double ke = kineticEnergy(mass, velocity);
+		
+		System.out.println("The Kinetic Energy is " + String.format("%,.2f", ke));
+		
+
+
+	}
+
+	public static double kineticEnergy(double mass, double velocity)
+	{
+		double ke = (1.0/2.0) * mass * velocity * velocity;
+		
+		return ke;
+	}
+	
+	
+}
+/*
+Enter mass of the objects
+5
+Enter objects velocity
+60
+The Kinetic Energy is 9,000.00
+*/
