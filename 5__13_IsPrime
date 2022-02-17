@@ -1,0 +1,69 @@
+import java.util.Scanner;
+
+public class IsPrime {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("Enter a number to test if prime");
+		
+		int num = keyboard.nextInt();
+		
+		System.out.println(num + " is a prime number is " + isPrime(num));
+		// TODO Auto-generated method stub
+
+	}
+	
+	
+	public static boolean isPrime(int num)
+	{
+		
+		
+		boolean prime = true;
+		
+		for (int i = 2; i < num; i++) {
+			
+	
+			
+			if(num <= 1)
+			{
+				System.out.println("Number is " + num + " and testing with " + i );
+				
+				prime = true;
+				break;
+			}
+	
+			if(num % i == 0) {
+				System.out.println("Number is " + num + " and testing with " + i );
+
+				prime = false;
+				break;
+				
+			}
+			
+			
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		return prime;
+	}
+
+}
+/*
+Enter a number to test if prime
+121
+Number is 121 and testing with 11
+121 is a prime number is false
+*/
