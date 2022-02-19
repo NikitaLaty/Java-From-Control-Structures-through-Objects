@@ -1,0 +1,87 @@
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+
+public class PrimeToFile {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		
+		PrintWriter writeToFile = new PrintWriter("Prime.txt");
+		
+		for (int i = 0; i < 101; i++) {
+			
+			
+			if(isPrime(i))
+			{
+				writeToFile.println(i + " is Prime");
+			}
+			
+			
+		}
+		
+		
+writeToFile.close();
+
+	}
+	public static boolean isPrime(int num)
+	{
+		
+		
+		boolean prime = true;
+		
+		for (int i = 2; i < num; i++) {
+			
+	
+			
+			if(num <= 1)
+			{
+				System.out.println("Number is " + num + " and testing with " + i );
+				
+				prime = true;
+				break;
+			}
+	
+			if(num % i == 0) {
+				System.out.println("*Number is " + num + " and testing with " + i );
+
+				prime = false;
+				break;
+				
+			}
+
+		}
+
+		return prime;
+	}
+
+}
+/*
+1 is Prime
+2 is Prime
+3 is Prime
+5 is Prime
+7 is Prime
+11 is Prime
+13 is Prime
+17 is Prime
+19 is Prime
+23 is Prime
+29 is Prime
+31 is Prime
+37 is Prime
+41 is Prime
+43 is Prime
+47 is Prime
+53 is Prime
+59 is Prime
+61 is Prime
+67 is Prime
+71 is Prime
+73 is Prime
+79 is Prime
+83 is Prime
+89 is Prime
+97 is Prime
+
+*/
+
