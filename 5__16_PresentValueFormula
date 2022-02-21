@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+public class PresentValueFormula {
+
+	public static void main(String[] args) {
+		
+		
+		double presentvalue;
+		double futureValue;
+		double annualInterestRate;
+		double numberOfYears;
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("Enter the interest rate");
+		annualInterestRate = keyboard.nextDouble();
+		
+		System.out.println("Enter the number of years");
+		numberOfYears = keyboard.nextDouble();
+		
+		System.out.println("Enter the future value you would like");
+		futureValue  = keyboard.nextDouble();
+
+		presentvalue  = formula(futureValue, annualInterestRate, numberOfYears);
+		
+		System.out.println("The amount you need to invest right now is " + String.format("$%,.2f", presentvalue));
+		
+		
+		
+	
+
+	}
+	
+	public static double formula(double futureF, double annualR, double yearsN)
+	{
+		double presentValue=0;
+		
+	 presentValue = futureF / Math.pow((1 + annualR),yearsN);
+		
+		
+		return presentValue;
+	}
+
+}
+/*
+Enter the interest rate
+.1
+Enter the number of years
+30
+Enter the future value you would like
+1000000
+The amount you need to invest right now is $57,308.55
+*/
