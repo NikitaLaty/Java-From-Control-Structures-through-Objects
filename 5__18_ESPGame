@@ -1,0 +1,126 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class ESPGame {
+
+	public static void main(String[] args) {
+		
+		
+		String userGuess="";
+		
+		
+		int count= 0;
+		
+		while(true) {
+		if(ESPGAME(user(), espColor()))
+		{
+			count++;
+		}
+		
+		EndGame(count);
+	
+		}
+	}
+	
+	public static String espColor() {
+		
+		Random random = new Random();
+		
+		int ran ;
+		String color="";
+		ran = random.nextInt(5);
+			
+			switch (ran) {
+			case 0:
+				color = "Red";
+				break;
+			case 1:
+				color = "Green";
+				break;
+			case 2:
+				color = "Blue";
+				break;
+			case 3:
+				color = "Orange";
+				break;
+			case 4:
+				color = "Yellow";
+				break;
+				
+				
+			default:
+				break;
+					
+	}
+		System.out.println("The ESP color is " + color);
+		return color;
+
+}
+	
+	public static String user()
+	{
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("Enter a color");
+		String userGuess = keyboard.nextLine();
+		System.out.println("The user colors is " + userGuess);
+		
+		return userGuess;
+	}
+	
+	public static boolean ESPGAME(String user, String color)
+	{
+		boolean match;
+		if(color.equalsIgnoreCase(user))
+		{
+	System.out.println("Match");
+	match = true;
+		}
+		else
+		{
+			match = false;
+		}
+			
+		return match;
+	}
+	public static void EndGame(int count)
+	{
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("Play again");
+		char answer = keyboard.nextLine().charAt(0);
+		if(answer == 'n')
+		{
+			System.out.println("Game Over");
+		
+			System.out.println("The correct guess is " + count);
+		System.exit(0);
+		}
+	}
+	
+	
+}
+/*
+Enter a color
+blue
+The user colors is blue
+The ESP color is Blue
+Match
+Play again
+y
+Enter a color
+red
+The user colors is red
+The ESP color is Red
+Match
+Play again
+y
+Enter a color
+green
+The user colors is green
+The ESP color is Yellow
+Play again
+n
+Game Over
+The correct guess is 2
+*/
