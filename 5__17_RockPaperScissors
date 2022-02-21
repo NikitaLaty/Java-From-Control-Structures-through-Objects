@@ -1,0 +1,121 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class RockPaperScissors {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		while(true)
+		{
+			Scanner keyboard = new Scanner(System.in);
+			Random random = new Random();
+
+			int user = 0;
+			int cpu = 0;
+			
+			System.out.println("Enter 1 for rock, 2 for paper, 3 for scissors:");
+			user = keyboard.nextInt();
+			cpu = random.nextInt(2)+1;
+			System.out.println("Rock Paper Scissors shoot");
+			Game(user, cpu);
+					
+		}
+		
+
+	
+	public static void Game(int user, int cpu)
+	{
+		if(user == cpu )
+		{
+			System.out.println("Its a tie");
+		}else
+		if(user == 1 && cpu == 2)
+		{
+			System.out.println("User: Rock vs CPU: Paper");
+			System.out.println("CPU wins with Paper ");
+		
+		}else
+			if(user == 2 && cpu == 1)
+			{
+				System.out.println("User: Paper vs CPU: Rock");
+				System.out.println("User wins with Paper");
+			
+			}else
+				if(user == 1 && cpu == 3)
+				{
+					System.out.println("User: Rock vs CPU: Scissors");
+					System.out.println("User winnes with Rock");
+				
+				}else
+					if(user == 3 && cpu == 1)
+					{
+						System.out.println("User: Scissors vs CPU: Rock");
+						System.out.println("CPU winnes with Rock");
+					}else
+						if(user == 2 && cpu == 3)
+						{
+							System.out.println("User: Paper vs CPU: Scissors");
+							System.out.println("CPU winnes with Scissors");
+						}else
+							if(user == 3 && cpu == 2)
+							{
+								System.out.println("User: Scissors vs CPU: Paper");
+								System.out.println("User winnes with Scissors");
+							}
+			
+		EndGame();
+	}
+	public static void EndGame()
+	{
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("Play again");
+		char answer = keyboard.nextLine().charAt(0);
+		if(answer == 'n')
+		{
+			System.out.println("Game Over");
+		System.exit(0);
+		}
+	}
+
+}
+/*
+Enter 1 for rock, 2 for paper, 3 for scissors:
+1
+Rock Paper Scissors shoot
+User: Rock vs CPU: Paper
+CPU wins with Paper 
+Play again
+y
+Enter 1 for rock, 2 for paper, 3 for scissors:
+1
+Rock Paper Scissors shoot
+User: Rock vs CPU: Paper
+CPU wins with Paper 
+Play again
+y
+Enter 1 for rock, 2 for paper, 3 for scissors:
+1
+Rock Paper Scissors shoot
+User: Rock vs CPU: Paper
+CPU wins with Paper 
+Play again
+o
+Enter 1 for rock, 2 for paper, 3 for scissors:
+1
+Rock Paper Scissors shoot
+Its a tie
+Play again
+2
+Enter 1 for rock, 2 for paper, 3 for scissors:
+3
+Rock Paper Scissors shoot
+User: Scissors vs CPU: Rock
+CPU winnes with Rock
+Play again
+n
+Game Over
+*/
