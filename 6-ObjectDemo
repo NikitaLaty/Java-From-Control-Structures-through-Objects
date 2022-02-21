@@ -1,0 +1,68 @@
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Random;
+import java.util.Scanner;
+
+public class ObjectDemo {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		int maxNumber;
+		int number;
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		Random random = new Random();
+
+		PrintWriter outputFile = new PrintWriter("number.txt");
+		
+		System.out.println("How many random numbers should i write? ");
+		
+		maxNumber = keyboard.nextInt();
+		
+		for (int i = 0; i < maxNumber; i++) {
+			
+			
+			
+			number = random.nextInt(101)+1;
+			
+			if(isPrime(number))
+			{
+			outputFile.println(number);
+			}
+		}
+		
+		outputFile.close();
+		System.out.println("Done");
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+	public static boolean isPrime(int num)
+	{
+
+		boolean prime = true;
+		
+		for (int i = 2; i < num; i++) {
+
+			if(num <= 1)
+			{
+				System.out.println("Number is " + num + " and testing with " + i );
+				
+				prime = true;
+				break;
+			}
+	
+			if(num % i == 0) {
+				System.out.println("Number is " + num + " and testing with " + i );
+
+				prime = false;
+				break;
+				}
+		}
+		return prime;
+	}
+
+}
