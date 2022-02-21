@@ -1,0 +1,115 @@
+import java.util.Random;
+
+public class EvenOdd {
+
+	public static void main(String[] args) {
+		
+		
+		Random random = new Random();
+
+		int total =0;
+		int odd = 0;
+		for (int i = 1; i <= 100; i++) {
+			
+			int ran = random.nextInt(100);
+			if(isEven(ran))
+			{
+				total++;
+				System.out.println("The number " + ran + " was add it and total is " + total);
+			}
+			else
+			{
+				odd++;
+			}
+			
+			
+			
+			
+		}
+		
+		System.out.println("=========");
+		System.out.println("ODD: " + odd + " EVEN " + total);
+		
+
+	}
+	
+	public static boolean isEven(int num)
+	{
+		
+		boolean ans;
+		
+		if((num % 2) == 0)
+		{
+			ans = true;
+		}else
+		{
+			ans = false;
+		}
+		
+		
+		
+		
+		
+		return ans;
+	}
+
+}
+/*
+The number 14 was add it and total is 1
+The number 58 was add it and total is 2
+The number 84 was add it and total is 3
+The number 76 was add it and total is 4
+The number 76 was add it and total is 5
+The number 22 was add it and total is 6
+The number 70 was add it and total is 7
+The number 88 was add it and total is 8
+The number 88 was add it and total is 9
+The number 42 was add it and total is 10
+The number 88 was add it and total is 11
+The number 72 was add it and total is 12
+The number 20 was add it and total is 13
+The number 80 was add it and total is 14
+The number 68 was add it and total is 15
+The number 76 was add it and total is 16
+The number 64 was add it and total is 17
+The number 60 was add it and total is 18
+The number 62 was add it and total is 19
+The number 96 was add it and total is 20
+The number 2 was add it and total is 21
+The number 38 was add it and total is 22
+The number 38 was add it and total is 23
+The number 32 was add it and total is 24
+The number 18 was add it and total is 25
+The number 92 was add it and total is 26
+The number 76 was add it and total is 27
+The number 42 was add it and total is 28
+The number 44 was add it and total is 29
+The number 56 was add it and total is 30
+The number 66 was add it and total is 31
+The number 84 was add it and total is 32
+The number 94 was add it and total is 33
+The number 46 was add it and total is 34
+The number 76 was add it and total is 35
+The number 64 was add it and total is 36
+The number 12 was add it and total is 37
+The number 8 was add it and total is 38
+The number 46 was add it and total is 39
+The number 34 was add it and total is 40
+The number 16 was add it and total is 41
+The number 90 was add it and total is 42
+The number 60 was add it and total is 43
+The number 12 was add it and total is 44
+The number 38 was add it and total is 45
+The number 40 was add it and total is 46
+The number 56 was add it and total is 47
+The number 94 was add it and total is 48
+The number 18 was add it and total is 49
+The number 88 was add it and total is 50
+The number 94 was add it and total is 51
+The number 58 was add it and total is 52
+The number 8 was add it and total is 53
+The number 62 was add it and total is 54
+=========
+ODD: 46 EVEN 54
+*/
+
