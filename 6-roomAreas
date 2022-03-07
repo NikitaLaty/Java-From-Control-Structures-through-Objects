@@ -1,0 +1,77 @@
+import javax.swing.JOptionPane;
+
+public class RoomAreas {
+
+	public static void main(String[] args) {
+		
+		
+
+		double totalArea;
+
+		
+		Rectangle kitchen = new Rectangle();
+		Rectangle bedroom = new Rectangle();
+		Rectangle den = new Rectangle();
+		
+
+		kitchen.setLength(Double.parseDouble(JOptionPane.showInputDialog("What is the kitchen's length?")));
+		kitchen.setWidth(Double.parseDouble(JOptionPane.showInputDialog("What is the kitchen's width?")));
+		bedroom.setLength(Double.parseDouble(JOptionPane.showInputDialog("What is the bedroom's length?")));
+		bedroom.setWidth(Double.parseDouble(JOptionPane.showInputDialog("What is the bedroom's width?")));
+		den.setLength(Double.parseDouble(JOptionPane.showInputDialog("What is the den's length?")));
+		den.setWidth(Double.parseDouble(JOptionPane.showInputDialog("What is the den's width?")));
+		
+		totalArea = kitchen.getArea() + bedroom.getArea() + den.getArea();
+		
+		JOptionPane.showMessageDialog(null, "The total area of the room is " + totalArea);
+		
+		System.exit(0);
+		
+				
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+
+public class Rectangle {
+	
+	@SuppressWarnings("unused")
+	private double length;
+	@SuppressWarnings("unused")
+	private double width;
+	
+	public void setLength(double len)
+	{
+		length = len;
+		
+	}
+	
+	public void setWidth(double w)
+	{
+		width = w;
+	}
+	
+	public double getLength()
+	{
+		return length;
+	}
+	
+	public double getWidth()
+	{
+		return width;
+		
+		
+	}
+	
+	public double getArea()
+	{
+		return width * length;
+	}
+	
+	
+}
+*/
+
