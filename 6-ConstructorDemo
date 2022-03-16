@@ -1,0 +1,33 @@
+
+public class ConstructorDemo {
+
+	public static void main(String[] args) {
+		
+		
+		System.out.println("Using 10 for width and 10 for length in the constructor");
+		
+		Rectangle box = new Rectangle(10,10);
+		
+		System.out.println("Length: " + box.getLength());
+		System.out.println("Width: " + box.getWidth());
+		System.out.println("Area: " + box.getArea());
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
+/*
+
+Using 10 for width and 10 for length in the constructor
+Length: 10.0
+Width: 10.0
+Area: 100.0
+
+*/
