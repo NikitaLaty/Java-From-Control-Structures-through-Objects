@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class CellPhoneDemo {
+
+	public static void main(String[] args) {
+
+		
+		String testMan ;
+		String testMod;
+		String testPrice;
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("Enter the Manufacturer");
+		
+		testMan = keyboard.nextLine();
+		
+		System.out.println("Enter Model number");
+		
+		testMod = keyboard.nextLine();
+		
+		System.out.println("Enter Retail Price");
+		
+		testPrice = keyboard.nextLine();
+		
+		CellPhone iphone = new CellPhone(testMan, testMod, 999.99);
+		
+		
+		System.out.println("Manufacturer:" + iphone.getManufact());
+		System.out.println("Model:" + iphone.getModel());
+		System.out.println("Retail Price:" + iphone.getRetailPrice());
+		
+
+		
+		
+	}
+
+}
