@@ -1,0 +1,34 @@
+import java.util.Random;
+
+public class Die {
+	
+	private int sides;
+	private int value;
+	
+	public Die( int numOfSides)
+	{
+		sides = numOfSides;
+		
+	}
+	
+	public void role ()
+	{
+		Random random = new Random();
+
+		value = random.nextInt(sides)+1;
+	}
+	
+	public int getsides()
+	{
+		return sides;
+	}
+	
+	public int getValue()
+	{
+		return value;
+	}
+	
+	
+	
+
+}
