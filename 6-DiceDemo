@@ -1,0 +1,42 @@
+
+public class DiceDemo {
+
+	public static void main(String[] args) {
+
+		final int DIE1_SIDES = 6;
+		final int DIE2_SIDES = 12;
+		final int MAX_ROLLS = 5;
+		
+		Die die1 = new Die(DIE1_SIDES);
+		Die die2 = new Die(DIE2_SIDES);
+		
+		System.out.println("This simulates the rolling of a " + DIE1_SIDES + " sided die and a " + DIE2_SIDES + " sided die." );
+		
+		System.out.println("Intial value of the dice:");
+		
+		System.out.println(die1.getValue() + " " + die2.getValue());
+		
+		for (int i = 0; i < MAX_ROLLS ; i++) {
+			
+			
+			die1.role();
+			die2.role();
+			
+			System.out.println(die1.getValue() + " " + die2.getValue());
+		}
+		
+
+	}
+
+}
+/*
+This simulates the rolling of a 6 sided die and a 12 sided die.
+Intial value of the dice:
+0 0
+2 12
+1 5
+6 5
+6 9
+1 5
+
+*/
