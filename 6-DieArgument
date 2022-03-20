@@ -1,0 +1,41 @@
+
+public class DieArgument {
+
+	public static void main(String[] args) {
+		
+		
+		
+		final int SIX_SIDES = 6;
+		final int TWENTY_SIDES = 20;
+		
+		Die sixSides = new Die(SIX_SIDES);
+		
+		Die twentySides = new Die(TWENTY_SIDES);
+		
+		
+		rollDie(sixSides);
+		
+		rollDie(twentySides);
+		
+		
+		
+		
+	
+	}
+	
+	public static void rollDie(Die d)
+	{
+		System.out.println("Rolling a " + d.getsides() + " sided die.");
+		
+		d.role();
+		
+		System.out.println("The die's value: " + d.getValue());
+	}
+
+}
+/*
+Rolling a 6 sided die.
+The die's value: 4
+Rolling a 20 sided die.
+The die's value: 5
+*/
