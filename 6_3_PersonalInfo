@@ -1,0 +1,81 @@
+
+public class PersonalTest {
+
+	public static void main(String[] args) {
+		
+		
+		
+		PersonalInformation nikita = new PersonalInformation("Nikita", 34, "354 broad", "345-852-4563");
+		PersonalInformation Rose = new PersonalInformation("Rose", 34, "354 south st", "345-444-3245");
+		PersonalInformation mary = new PersonalInformation("Masha", 34, "754 grant", "345-789-1234");
+		
+		
+		
+		System.out.println(nikita.toString());
+		System.out.println(Rose.toString());
+		System.out.println(mary.toString());
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+public class PersonalInformation {
+	
+	private String name;
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	@Override
+	public String toString() {
+		return "PersonalInformation [name=" + name + ", age=" + age + ", address=" + address + ", phone=" + phone + "]";
+	}
+
+	private int age;
+	private String address;
+	private String phone;
+	
+	public PersonalInformation(String name, int age, String address, String phone)
+	{
+		this.name = name;
+		this.age = age;
+		this.address = address;
+		this.phone = phone;
+	}
+
+}
+
+
+PersonalInformation [name=Nikita, age=34, address=354 broad, phone=345-852-4563]
+PersonalInformation [name=Rose, age=34, address=354 south st, phone=345-444-3245]
+PersonalInformation [name=Masha, age=34, address=754 grant, phone=345-789-1234]
