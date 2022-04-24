@@ -1,0 +1,94 @@
+
+public class CarTest {
+
+	public static void main(String[] args) {
+		
+		
+		
+		Car Acura = new Car(2021, "ILX");
+		
+		System.out.println(Acura.toString());
+		
+		System.out.println(Acura.getMake());
+		int x =0;
+		while( x <= 5){
+		Acura.accelerate();
+		x++;
+		}
+		System.out.println(Acura.toString());
+		x=0;
+		while(x++ <5) {
+		Acura.brake();
+		}
+		System.out.println(Acura.toString());
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+public class Car {
+	
+	
+	private int yearModel; 
+	@Override
+	public String toString() {
+		return "Car [yearModel=" + yearModel + ", make=" + make + ", speed=" + speed + "]";
+	}
+	private String make;
+	private int speed;
+	
+	public Car(int year, String make)
+	{
+		yearModel = year;
+		this.make = make;
+		
+		speed = 0;
+	}
+	
+	
+	public int getYearModel() {
+		return yearModel;
+	}
+
+	public void setYearModel(int yearModel) {
+		this.yearModel = yearModel;
+	}
+
+	public String getMake() {
+		return make;
+	}
+
+	public void setMake(String make) {
+		this.make = make;
+	}
+
+	public int getSpeed() {
+		return speed;
+	}
+
+	public void setSpeed(int speed) {
+		this.speed = speed;
+	}
+
+
+	
+	public void accelerate()
+	{
+		speed += 5;
+	}
+	public void brake()
+	{
+		speed -= 5;
+	}
+	
+	
+	
+}
+
+
+Car [yearModel=2021, make=ILX, speed=0]
+ILX
+Car [yearModel=2021, make=ILX, speed=30]
+Car [yearModel=2021, make=ILX, speed=5]
+
