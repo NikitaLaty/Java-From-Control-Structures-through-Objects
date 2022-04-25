@@ -1,0 +1,76 @@
+
+public class RetailTest {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		Retail_Item item1 = new Retail_Item("Jacket", 12, 59.95);
+		Retail_Item item2= new Retail_Item("Designer Jeans", 40, 34.95);
+		Retail_Item item3 = new Retail_Item("Shirt", 20, 24.95);
+		
+		
+		
+		System.out.println(item1.toString());
+		System.out.println(item2.toString());
+		System.out.println(item3.toString());
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+Retail_Item [discription=Jacket, unitesOnHand=12, price=59.95]
+Retail_Item [discription=Designer Jeans, unitesOnHand=40, price=34.95]
+Retail_Item [discription=Shirt, unitesOnHand=20, price=24.95]
+
+
+*/
+
+public class Retail_Item {
+	
+	
+	public String getDiscription() {
+		return discription;
+	}
+
+	public void setDiscription(String discription) {
+		this.discription = discription;
+	}
+
+	public int getUnitesOnHand() {
+		return unitesOnHand;
+	}
+
+	public void setUnitesOnHand(int unitesOnHand) {
+		this.unitesOnHand = unitesOnHand;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	private String discription;
+	private int unitesOnHand;
+	
+	private double price;
+	
+	public Retail_Item(String dis, int unit, double p)
+	{
+		discription = dis;
+		unitesOnHand = unit;
+		price = p;
+		
+	}
+
+	@Override
+	public String toString() {
+		return "Retail_Item [discription=" + discription + ", unitesOnHand=" + unitesOnHand + ", price=" + price + "]";
+	}
+
+}
