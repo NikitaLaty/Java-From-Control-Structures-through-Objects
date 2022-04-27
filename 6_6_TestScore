@@ -1,0 +1,94 @@
+Enter Score 1
+90
+Enter Score 2
+95
+Enter Score 3
+99
+Enter Score 1
+50
+Enter Score 2
+75
+Enter Score 3
+100
+Enter Score 1
+1
+Enter Score 2
+2
+Enter Score 3
+3
+Enter Score 1
+15
+Enter Score 2
+15
+Enter Score 3
+15
+TestScore [score1=90.0, score2=95.0, score3=99.0, getAverage()=94.66666666666667]
+TestScore [score1=50.0, score2=75.0, score3=100.0, getAverage()=75.0]
+TestScore [score1=1.0, score2=2.0, score3=3.0, getAverage()=2.0]
+TestScore [score1=15.0, score2=15.0, score3=15.0, getAverage()=15.0]
+
+
+public class TestScoreTest {
+
+	public static void main(String[] args) {
+		
+		TestScore nik = new TestScore();
+		TestScore niki = new TestScore();
+		TestScore nikit = new TestScore();
+		TestScore nikita = new TestScore();
+		
+		System.out.println(nik.toString());
+		System.out.println(niki.toString());
+		System.out.println(nikit.toString());
+		System.out.println(nikita.toString());
+
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+import java.util.Scanner;
+
+public class TestScore {
+	
+	Scanner keyboard = new Scanner(System.in);
+
+	
+	
+	private double score1;
+	private double score2;
+	private double score3;
+	
+	public TestScore()
+	{
+		System.out.println("Enter Score 1");
+		score1 = keyboard.nextDouble();
+		
+		System.out.println("Enter Score 2");
+		score2 = keyboard.nextDouble();
+		
+		System.out.println("Enter Score 3");
+		score3 = keyboard.nextDouble();
+		
+		
+	}
+	
+	
+	public double getAverage()
+	{
+		return (score1 + score2 + score3) / 3;
+	}
+
+
+	@Override
+	public String toString() {
+		return "TestScore [score1=" + score1 + ", score2=" + score2 + ", score3=" + score3 + ", getAverage()="
+				+ getAverage() + "]";
+	}
+	
+	
+
+}
+
