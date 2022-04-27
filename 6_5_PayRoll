@@ -1,0 +1,145 @@
+import java.util.Scanner;
+
+public class Payroll {
+	
+	
+	
+	private String employee;
+	private int ID;
+	private double payRate;
+	private double hours;
+	
+	public Payroll(String name, int id)
+	{
+		employee = name;
+		ID = id;
+		
+		payRate = enterPayRate();
+		hours= enterHours();
+	}
+	
+	
+	public double enterPayRate()
+	{
+		Scanner keyboard = new Scanner(System.in);
+		
+
+		System.out.println("What is the pay rate for " + employee + " :");
+	return keyboard.nextDouble();
+		
+		
+		
+	}
+	public double enterHours()
+	{
+		Scanner keyboard = new Scanner(System.in);
+		
+		
+		System.out.println("What is the hours work for " + employee + " :");
+		return keyboard.nextDouble();
+		
+		
+		
+	}
+
+
+	public String getEmployee() {
+		return employee;
+	}
+
+
+	public void setEmployee(String employee) {
+		this.employee = employee;
+	}
+
+
+	public int getID() {
+		return ID;
+	}
+
+
+	public void setID(int iD) {
+		ID = iD;
+	}
+
+
+	public double getPayRate() {
+		return payRate;
+	}
+
+
+	public void setPayRate(double payRate) {
+		this.payRate = payRate;
+	}
+
+
+	public double getHours() {
+		return hours;
+	}
+
+
+	public void setHours(double hours) {
+		this.hours = hours;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Payroll [employee=" + employee + ", ID=" + ID + ", payRate=" + payRate + ", hours=" + hours + " gross=$"+grossPay() +"]";
+	}
+	
+	public double grossPay()
+	{
+		return getHours() * getPayRate();
+	}
+	
+
+	
+}
+
+
+
+
+public class PayRollTest {
+
+	public static void main(String[] args) {
+		
+		
+		
+		Payroll nik = new Payroll("nik", 00);
+		Payroll niki = new Payroll("niki", 01);
+		Payroll nikit = new Payroll("nikit", 02);
+		
+		
+		System.out.println(nik.toString());
+		System.out.println(niki.toString());
+		System.out.println(nikit.toString());
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+What is the pay rate for nik :
+12
+What is the hours work for nik :
+45
+What is the pay rate for niki :
+12
+What is the hours work for niki :
+38
+What is the pay rate for nikit :
+12
+What is the hours work for nikit :
+50
+Payroll [employee=nik, ID=0, payRate=12.0, hours=45.0gross=$540.0]
+Payroll [employee=niki, ID=1, payRate=12.0, hours=38.0gross=$456.0]
+Payroll [employee=nikit, ID=2, payRate=12.0, hours=50.0gross=$600.0]
+
+
