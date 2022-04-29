@@ -1,0 +1,74 @@
+import javax.swing.JOptionPane;
+
+public class CircleTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Circle firstCircle = new Circle(Double.parseDouble(JOptionPane.showInputDialog("what is the radius")));
+		
+		System.out.println("The diameter is " + firstCircle.getDiameter());
+		System.out.println("The circumference is " + firstCircle.getCircumference());
+		System.out.printf("The area is %.2f" , firstCircle.getArea());
+
+	}
+
+}
+
+
+***********************************************************************************************
+
+
+public class Circle {
+	
+	
+	
+	private double radius;
+	private final double PI = 3.14159;
+	
+	public Circle(double rad)
+	{
+		radius = rad;
+		
+		
+	}
+	
+	public Circle()
+	{
+		radius = 0.0;
+	}
+
+	public double getRadius() {
+		return radius;
+	}
+
+	public void setRadius(double radius) {
+		this.radius = radius;
+	}
+	
+	 public double getArea()
+	 {
+		 return PI * radius * radius ;
+	 }
+	 
+	 public double getDiameter()
+	 {
+		 return radius * 2;
+	 }
+	 
+	 public double getCircumference()
+	 {
+		 return 2 * PI * radius;
+	 }
+
+}
+
+
+***********************************************************
+
+Run:
+
+The diameter is 10.0
+The circumference is 31.4159
+The area is 78.54
