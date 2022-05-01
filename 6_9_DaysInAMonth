@@ -1,0 +1,124 @@
+
+public class MonthDaysTest {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		MonthDays days = new MonthDays(2004, 2);
+		
+		
+		
+		System.out.println(days.numberOfDays());
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+***********************************************************************************************
+Leap true
+Febuary = 29
+0
+***********************************************************************************************
+
+public class MonthDays {
+	
+	private int years;
+	private int month;
+	
+	public MonthDays(int year, int month)
+	{
+		years = year;
+		this.month = month;
+		
+		
+		
+	}
+	
+	
+	public int numberOfDays()
+	{
+		
+		boolean leap = false;
+		int days = 0;
+		
+		if(years % 100 == 0 && years % 400 ==0)
+		{
+			leap = true;
+		}
+		
+		if(years % 100 != 0 && years % 4 ==0)
+		{
+			leap = true;
+		}
+		
+		System.out.println("Leap " + leap);
+		
+		
+		switch (month) {
+		
+		
+		case 1:
+			System.out.println("January = 31");
+			break;
+		case 2:
+			if(leap)
+			System.out.println("Febuary = 29");
+			else
+				System.out.println("Febuary = 28");
+				
+				
+			break;
+		case 3:
+			System.out.println("March = 31");
+			break;
+		case 4:
+			System.out.println("April = 30");
+			break;
+		case 5:
+			System.out.println("May = 31");
+			break;
+		case 6:
+			System.out.println("June = 30");
+			break;
+		case 7:
+			System.out.println("July = 31");
+			break;
+		case 8:
+			System.out.println("August = 31");
+			break;
+		case 9:
+			System.out.println("September = 30");
+			break;
+		case 10:
+			System.out.println("October = 31");
+			break;
+		case 11:
+			System.out.println("November = 30");
+			break;
+		case 12:
+			System.out.println("December = 31");
+			break;
+		
+			default:
+				System.out.println("Wrong month");
+		
+			
+		
+		
+		
+		}
+		
+		
+		
+		return days;
+	}
+	
+	
+	
+
+}
