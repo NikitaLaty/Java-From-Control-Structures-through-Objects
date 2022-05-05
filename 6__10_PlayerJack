@@ -1,0 +1,142 @@
+import java.util.Random;
+
+public class PlayerJack {
+	
+	Random random = new Random();
+
+	
+	private int score;
+	private String name;
+	
+	public PlayerJack(String name)
+	{
+		this.name = name;
+		score = 0;
+	}
+	
+	public void roll()
+	{
+		int dice1 = random.nextInt(7);
+		int dice2 = random.nextInt(7);
+		
+		System.out.println("Dice 1 " + dice1);
+		System.out.println("Dice 2 " + dice2);
+		
+		  score += dice1 + dice2;
+		  
+		  
+
+	}
+
+	public int getScore() {
+		return score;
+	}
+	
+
+	public void setScore(int score) {
+		this.score = score;
+	}
+	
+	
+	
+
+}
+
+
+*********************************************
+Dice 1 2
+Dice 2 5
+7
+Roll again?
+n
+*Dealer Rolls*
+Dice 1 1
+Dice 2 4
+5
+*Dealer Rolls*
+Dice 1 4
+Dice 2 3
+12
+*Dealer Rolls*
+Dice 1 2
+Dice 2 0
+14
+*Dealer Rolls*
+Dice 1 6
+Dice 2 1
+21
+User Score 7
+House Score 21
+**********************************************************
+
+import java.util.Scanner;
+
+public class Test21 {
+
+	public static void main(String[] args) {
+		
+		Scanner keyboard = new Scanner(System.in);
+
+
+		char answer = 'y';
+		PlayerJack user = new PlayerJack("Niktia");
+		PlayerJack house = new PlayerJack("House");
+		
+		
+		do
+		{
+			
+			user.roll();
+			System.out.println(user.getScore());
+			
+			
+			if(user.getScore() > 21 )
+			{
+				System.out.println("House Wins");
+				break;
+				
+			}
+			
+			
+		System.out.println("Roll again?");
+		answer = keyboard.nextLine().charAt(0);
+	
+			
+		}while(answer != 'n');
+		
+		answer = 'y';
+		do
+		{
+			System.out.println("*Dealer Rolls*");
+			house.roll();
+			System.out.println(house.getScore());
+
+			
+			
+			if(house.getScore() < 17 )
+			{
+			
+				answer = 'y';
+			}
+			else {
+				answer = 'n';
+			}
+			
+	
+			
+		}while(answer != 'n');
+		
+		
+		
+		
+		System.out.println("User Score " + user.getScore());
+		System.out.println("House Score " + house.getScore());
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
