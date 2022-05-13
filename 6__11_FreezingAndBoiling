@@ -1,0 +1,163 @@
+******************************
+Enter temperature :
+-444
+Ethyl is freezing
+Oxygen is freezing
+Water is freezing
+******************************
+
+import java.util.Scanner;
+
+public class FBTest {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		System.out.println("Enter temperature :");
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		FandBpoints temp = new FandBpoints(keyboard.nextDouble());
+		
+		
+		if(temp.isEthylBoiling())
+			System.out.println("Ethyl is boiling");
+
+
+		if(temp.isEthylFreezing())
+			System.out.println("Ethyl is freezing");
+		
+		if(temp.isOxygenBoiling())
+			System.out.println("Oxygen is boiling");
+		
+		
+		if(temp.isOxygenFreezing())
+			System.out.println("Oxygen is freezing");
+		
+		if(temp.isWaterBoiling())
+			System.out.println("Water is boiling");
+		
+		
+		if(temp.isWaterFreezing())
+			System.out.println("Water is freezing");
+		
+		
+		
+		keyboard.close();
+		
+	}
+
+}
+
+
+
+public class FandBpoints {
+	
+	
+	
+	
+	private double temperature;
+	
+	
+	
+	FandBpoints(double temp)
+	{
+		temperature = temp;
+	}
+
+
+
+	public double getTemperature() {
+		return temperature;
+	}
+
+
+
+	public void setTemperature(double temperature) {
+		this.temperature = temperature;
+	}
+	
+	
+	
+	public boolean isEthylFreezing()
+	{
+		
+		if(temperature <= -173 )
+			return true;
+		else
+			return false;
+		
+		
+	}
+	
+	public boolean isEthylBoiling()
+	{
+		
+		if(temperature >= 172 )
+			return true;
+		else
+			return false;
+		
+		
+	}
+	public boolean isOxygenFreezing()
+	{
+		
+		if(temperature <= - 362 )
+			return true;
+		else
+			return false;
+		
+		
+	}
+	public boolean isOxygenBoiling()
+	{
+		
+		if(temperature >= - 306 )
+			return true;
+		else
+			return false;
+		
+		
+	}
+	
+	
+	
+	public boolean isWaterFreezing()
+	{
+		
+		if(temperature <= 32 )
+			return true;
+		else
+			return false;
+		
+		
+	}
+	public boolean isWaterBoiling()
+	{
+		
+		if(temperature >= 212 )
+			return true;
+		else
+			return false;
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}
+
+
