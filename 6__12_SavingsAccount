@@ -1,0 +1,136 @@
+**************************
+What is your balance >
+1000
+What is the ARP rate >
+0.25
+How many months to simulate >
+3
+Month 1
+Enter amount deposited for the month 
+200
+Enter amount withdrawn for the month 
+0
+Current Balance 1200.0
+Current Balance + interest >1225.0
+Month 2
+Enter amount deposited for the month 
+0
+Enter amount withdrawn for the month 
+0
+Current Balance 1225.0
+Current Balance + interest >1250.5208333333333
+Month 3
+Enter amount deposited for the month 
+1000
+Enter amount withdrawn for the month 
+0
+Current Balance 2250.520833333333
+Current Balance + interest >2297.4066840277774
+*********************************************
+import java.util.Scanner;
+
+public class SavingsTest {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("What is your balance >");
+		
+		double balance = keyboard.nextDouble();
+		
+		System.out.println("What is the ARP rate >");
+		
+		double rate = keyboard.nextDouble();
+		
+		SavingsAccount savings = new SavingsAccount(balance, rate);
+		
+		System.out.println("How many months to simulate >");
+		
+		int month = keyboard.nextInt();
+		
+		for (int i = 1; i <= month ; i++) {
+			
+			
+			
+			System.out.println("Month " + i);
+			System.out.println("Enter amount deposited for the month " );
+			savings.deposit(keyboard.nextDouble());
+			System.out.println("Enter amount withdrawn for the month " );
+			savings.withdrawal(keyboard.nextDouble());
+			System.out.println("Current Balance " + savings.getBalance());
+			
+			savings.deposit(savings.monthlyinterestRate());
+			
+			System.out.println("Current Balance + interest >" + savings.getBalance());
+			
+			
+			
+		}
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+/*************************************************
+
+public class SavingsAccount {
+	
+	
+	
+	private double balance;
+	private double interestYear;
+	
+	
+	public SavingsAccount(double balance, double year)
+	{
+		
+		this.balance = balance;
+		this.interestYear = year;
+		
+		
+	}
+	
+	
+	public double monthlyinterestRate()
+	{
+		
+		double monthly = (interestYear * balance) / 12;
+		
+		return monthly;
+	}
+	
+	
+	public void deposit(double amount)
+	{
+		 balance += amount;
+		
+		
+	}
+	
+	public void withdrawal(double amount)
+	{
+		
+		balance -= amount;
+	}
+
+
+	public double getBalance() {
+		return balance;
+	}
+
+
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+	
+	
+	
+
+}
