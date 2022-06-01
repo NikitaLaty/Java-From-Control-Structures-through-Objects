@@ -1,0 +1,51 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class DepositScript {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		
+		SavingsAccount savings = new SavingsAccount(500.00, 0.23);
+
+		File depositTxt = new File("Deposit.txt");
+		
+		Scanner deposit = new Scanner(depositTxt);
+		
+		File withTxt = new File("Withdrawals.txt");
+		
+		Scanner withdraw = new Scanner(withTxt);
+		
+		System.out.println("Balance: " + savings.getBalance() + "$");
+		
+		System.out.println("**Deposit**");
+
+		while(deposit.hasNext()){
+		savings.deposit(Double.parseDouble(deposit.nextLine()));
+		
+		
+		
+		}
+		System.out.println("Balance: " + savings.getBalance() + "$");
+		
+		System.out.println("**Withdraw**");
+		while(withdraw.hasNext()){
+			
+			savings.withdrawal(Double.parseDouble(withdraw.nextLine()));
+			
+			
+			
+		}
+		
+		System.out.printf("Balance: $%,.2f $\n", savings.getBalance());
+		
+		savings.deposit(savings.monthlyinterestRate());
+		
+		System.out.println("Current Balance + interest >" + savings.getBalance());
+		
+	deposit.close();
+	withdraw.close();
+	}
+
+}
